@@ -1,0 +1,45 @@
+/*custom-css*/
+.top-strip {
+    background: rgba(224, 224, 224, 1);
+    padding: 10px;
+}
+
+.h-info i {
+    color: #e51e25;
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.h-info a {
+    color: #000;
+    font-size: 19px;
+}
+.h-info a {
+    margin-right: 15px;
+}
+.h-info a:hover {
+    text-decoration: none;
+    color: #e51e25;
+}
+.social-icons {
+    float: right;
+}
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    padding-top: 4px;
+    background: #e51e25;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 4px;
+}
+.sc-AhSAr.dtkQzs.sticky-header {
+    position: unset;
+}
+
+.logo-section img {
+    width: 100%;
+}

@@ -1,0 +1,390 @@
+body, html { /* set size of body to full page and remove margins */
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+	.headerc{
+		width: 100%;height: 40px;background-color: #007cc2;color: white
+	}
+
+	.headerc a{
+		font-family: Asap, sans-serif;cursor: pointer;color: rgb(250, 251, 252);font-size: 14px !important;text-decoration: underline;line-height: 36px;margin: 30px 0px;font-weight: bold;
+	}
+
+	.headerc a:hover{
+		text-decoration: none;
+		color: white;
+	}
+
+	.nav-style{
+		border-radius: 0px !important;
+		background-color: black !important;
+		height: 40px;
+		color:white;
+	}
+
+	.nav-links{
+		color: white !important;
+    font-size: 35px;
+    margin-left: 122px;
+	}
+
+	.blue_text{
+		color: rgb(0, 124, 194);
+	}
+
+	.white_text{
+		color: white !important;
+	}
+
+	.row_padding{
+		padding: 35px;
+	}
+
+	.more_help{
+		color: rgb(245, 126, 34);
+		font-size: 15px;
+	}
+	
+	.more_help:hover{
+		color: rgb(245, 126, 34);		
+	}
+
+	.tyre-logo{
+		width: 20%;margin-bottom: 0px;margin-left: 55px;
+	}
+
+	.responsive {
+  width: 100%;
+  height: auto;
+}
+</style>
+
+<style>
+
+.navbar-brand {
+  padding: 0px !important;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+.car-sales-logo{
+	width: 32%;margin-bottom: 0px;margin-left: 55px;
+}
+
+.search-div{
+	height: 100%;padding: 45px;
+	background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100%;
+}
+	
+	.search-div-heading{
+		font-size: 4vw;color: white;
+		margin-left: 15px;
+	}
+
+.search-div-text{
+	display: inline-flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: center;justify-content: center;height: 42px;font-family: Roboto;font-size: 18px;font-weight: bold;line-height: 19px;text-align: center;color: rgb(255, 255, 255);box-sizing: border-box;margin: 8px 8px 8px 0px;
+}
+
+.search-div-text-a{
+
+		display: inline-flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: center;justify-content: center;height: 42px;font-family: Roboto;font-size: 18px;font-weight: bold;line-height: 19px;text-align: center;color: orange !important;box-sizing: border-box;margin: 8px 8px 8px 0px;text-decoration: underline;
+
+}
+
+.search-div-link{
+	margin-left: 4px;font-weight: bold;color: white;border: 2px white solid;border-radius: 50px;font-size: 18px;
+	padding: 5px;
+}
+
+
+	.trouble-text{
+		font-size: 1vw;
+	}
+
+.how-it-works-images{
+	width: 60px;height: 60px; margin-bottom: 0px;margin-left: 0px;
+}
+
+.how_it_works_headings{
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.min-p-search{
+
+	font-size: 16px;
+	margin-top: 20px;
+
+}
+
+.tyresales{
+	font-family: Asap, sans-serif;
+    font-weight: 600;
+    text-align: left;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.how_it_headings{
+	font-size: 46px;
+    line-height: 58px;
+    font-family: Asap, sans-serif;
+    font-weight: 600;
+    text-align: left;
+    margin-block-start: 10px;
+}
+
+
+.pages-main-heading{
+	font-size: 66px;
+    line-height: 73px;
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+}
+
+.pages-main-sub-heading{
+	font-size: 46px;
+    line-height: 58px;
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+}
+
+.tyres-sizes-text{
+	font-size: 16px;
+    line-height: 36px;
+    margin: 30px 0px;
+    font-family: Asap, sans-serif;
+    cursor: pointer;
+    color: rgb(129, 178, 39);
+}
+
+
+.search_by{
+
+
+display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 42px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    margin: 8px 8px 8px 0px;
+	
+}
+
+
+@media only screen and (max-device-width: 480px) {
+		.tyre-logo{
+		width: 50%;margin-bottom: 0px;margin-left: 55px;
+	}
+
+	.car-sales-logo{
+	width: 90%;margin-bottom: 0px;margin-left: 55px;
+	}
+
+.search-div{
+	height: 100%;padding: 45px;
+	background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100% 390px;
+}
+
+.search-div-heading{
+		font-size: 9vw;color: white;
+		margin-left: 15px;
+	}
+
+.search-div-text{
+	display: inline-flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: center;justify-content: center;height: 42px;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 19px;text-align: center;color: rgb(255, 255, 255);box-sizing: border-box;margin: 8px 8px 8px 0px;
+}
+
+.search-div-text-a{
+
+		display: inline-flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: center;justify-content: center;height: 42px;font-family: Roboto;font-size: 14px;font-weight: bold;line-height: 19px;text-align: center;color: orange !important;box-sizing: border-box;margin: 8px 8px 8px 0px;text-decoration: underline;
+
+}
+	
+	.width-20{
+		width: 20% !important;
+	}
+
+
+		.width-80{
+		width: 80% !important;
+	}
+
+	.trouble-text{
+		font-size: 4vw;
+	}
+
+	.slider{
+		margin-top: -50px !important;
+	    padding: 0px !important;
+	}
+
+	.how-it-works-images{
+	width: 60px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+	}
+
+	.what-else{
+		font-size: 5vw;
+	}
+
+
+.pull-right > .nav-links{
+    margin-left: 0px;
+    font-size: unset;
+}
+.pull-right > .nav-links .svg-inline--fa.fa-w-12{
+	width: 22px;
+	height: 22px;
+}
+.pull-right > .navbar-brand{
+	padding: 15px;
+	/*margin: 0px;*/
+}
+.navbar-header{
+	width: 100%;
+}
+.navbar-header .pull-left{
+	width: 20%;
+}
+.navbar-header .pull-right{
+	width: 80%;
+}
+.mine-sign-in{
+
+}
+.mine-join-in{
+
+}
+.small-div-in-image img{
+	width: 200%;
+	margin: 0px;
+
+}
+.small-div-in-image-2 img{
+	width: 250%;
+	margin: 0px;
+	float: none !important;
+}
+
+.show-on-mobile{
+    color: white;
+    /* margin: 22px 0px; */
+    /*margin: 0px 5px;*/
+    background-color: rgba(0, 0, 0, 0.37);
+    font-size: 13px;
+    font-family: Asap, sans-serif;
+    /* line-height: 0; */
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    right: 0px;
+    left: 0px;
+    text-decoration: underline;
+}
+
+.mobile-front-exper{
+	padding: 0px;margin: 8px !important;
+}
+
+  .row.mine-exper{
+	padding: 0% !important;
+	padding-top: 8% !important;
+	padding-bottom: 8% !important;
+	padding-left: 2% !important;
+	padding-right: 2% !important;
+
+  }
+
+.min-head-search , .row.mine-exper h2 {
+	font-size: x-large;
+}
+.min-p-search , .row.mine-exper p{
+	font-size: 168%;
+	margin-top: 2%;
+	margin-bottom: 12%;
+}
+
+.footer_links{
+	width: 50% !important;
+}
+
+.how_it_works_headings{
+	font-size: 32px;
+	line-height: 32px;
+	margin-top: 23px;
+}
+
+.hide_on_sm{
+	display: none;
+}
+.set_svg_center{
+	margin-top: 10px;
+	margin-left: 60px !important;
+}
+
+.set_link_center{
+	margin-top: 10px;
+	margin-left: 45px;
+	font-size: 15px !important;
+}
+
+.set_link_center_m{
+	margin-top: 10px;
+	font-size: 15px !important;
+}
+
+.top_bar{
+	background-color: #007cc2 !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	border-left-width: 0px !important;
+	border-right-width: 0px !important;
+	border-top-width: 0px !important;
+	border-bottom-width: 0px !important;
+	width: 105%;
+	height: 0px !important;
+
+}
+.navbar_hover:hover{
+	background-color: transparent !important;
+}
+.navbar_menu{
+	z-index: 1;
+    background-color: black;
+    font-size: 15px;
+    position: fixed;
+    height: auto;   
+    top: 50px;
+    width: 100%;
+     overflow: auto; 
+}
+
+}

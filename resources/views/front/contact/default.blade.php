@@ -1,0 +1,6 @@
+@include('front.contact.head')
+@include('front.contact.header')  
+      @yield('content')
+@include('front.contact.footer')  
+@include('front.contact.scripts')       
+@yield('jsOutside')

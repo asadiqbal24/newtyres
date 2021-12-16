@@ -1,0 +1,2071 @@
+@font-face {
+  font-family: 'csn-icons';
+  src: url('/access-content/content/fonts/csn-icons.eot');
+  src: url('/access-content/content/fonts/csn-icons.eot?#iefix') format('embedded-opentype'), url('/access-content/content/fonts/csn-icons.woff') format('woff'), url('/access-content/content/fonts/csn-icons.ttf') format('truetype'), url('/access-content/content/fonts/csn-icons.svg#csn-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class*="icon-"] {
+  font-family: 'csn-icons';
+  speak: none;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-mini {
+  font-size: 12px;
+}
+.icon-small {
+  font-size: 16px;
+}
+.icon-large {
+  font-size: 48px;
+}
+.icon-huge {
+  font-size: 64px;
+}
+.icon-finance:before {
+  content: "\e611";
+}
+.icon-signout:before {
+  content: "\e626";
+}
+.icon-account:before {
+  content: "\e600";
+}
+.icon-manage-ad:before {
+  content: "\e617";
+}
+.icon-search:before {
+  content: "\e623";
+}
+.icon-sync:before {
+  content: "\e628";
+}
+.icon-save:before {
+  content: "\e621";
+}
+.icon-save-search:before {
+  content: "\e622";
+}
+.icon-remove:before {
+  content: "\e61e";
+}
+.icon-recent:before {
+  content: "\e61c";
+}
+.icon-create-ad:before {
+  content: "\e60b";
+}
+.icon-price-alerts:before {
+  content: "\e60c";
+}
+.icon-offer-alerts:before {
+  content: "\e627";
+}
+.icon-tick:before {
+  content: "\e629";
+}
+@font-face {
+  font-family: "Proxima";
+  src: url("/access-content/content/fonts/proximanova-regular-webfont.eot");
+  src: url("/access-content/content/fonts/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("./access-content/content/fonts/proximanova-regular-webfont.woff") format("woff"), url("/access-content/content/fonts/proximanova-regular-webfont.ttf") format("truetype"), url("/access-content/content/fonts/proximanova-regular-webfont.svg#Proxima") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+dfn,
+img,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  /*line-height: 1;*/
+  line-height: 1.2;
+  /* Updated according to google */
+
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.content.carsales .theme-background,
+.theme-override.carsales .theme-background {
+  background-color: #007cc2;
+  color: white;
+}
+.content.carsales .theme-background-light,
+.theme-override.carsales .theme-background-light {
+  background-color: #63cbe8;
+  color: white;
+}
+.content.carsales .theme-background-dark,
+.theme-override.carsales .theme-background-dark {
+  background-color: #00468b;
+  color: white;
+}
+.content.carsales .theme-background-gradient,
+.theme-override.carsales .theme-background-gradient {
+  background: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+  color: white;
+}
+.content.carsales .theme-border,
+.theme-override.carsales .theme-border {
+  border-color: #007cc2;
+}
+.content.carsales .theme-border-light,
+.theme-override.carsales .theme-border-light {
+  border-color: #63cbe8;
+}
+.content.carsales .theme-border-dark,
+.theme-override.carsales .theme-border-dark {
+  border-color: #00468b;
+}
+.content.carsales .theme-color,
+.theme-override.carsales .theme-color {
+  color: #007cc2;
+}
+.content.carsales .theme-color-light,
+.theme-override.carsales .theme-color-light {
+  color: #63cbe8;
+}
+.content.carsales .theme-color-dark,
+.theme-override.carsales .theme-color-dark {
+  color: #00468b;
+}
+.content.carsales .theme-color-gradient,
+.theme-override.carsales .theme-color-gradient {
+  color: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.carsales .theme-stroke,
+.theme-override.carsales .theme-stroke {
+  stroke: #007cc2;
+}
+.content.carsales .theme-stroke-light,
+.theme-override.carsales .theme-stroke-light {
+  stroke: #63cbe8;
+}
+.content.carsales .theme-stroke-dark,
+.theme-override.carsales .theme-stroke-dark {
+  stroke: #00468b;
+}
+.content.carsales .theme-stroke-gradient,
+.theme-override.carsales .theme-stroke-gradient {
+  stroke: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.carsales .theme-fill,
+.theme-override.carsales .theme-fill {
+  fill: #007cc2;
+}
+.content.carsales .theme-fill-light,
+.theme-override.carsales .theme-fill-light {
+  fill: #63cbe8;
+}
+.content.carsales .theme-fill-dark,
+.theme-override.carsales .theme-fill-dark {
+  fill: #00468b;
+}
+.content.carsales .theme-fill-gradient,
+.theme-override.carsales .theme-fill-gradient {
+  fill: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.carsales .theme-focus-border:focus,
+.theme-override.carsales .theme-focus-border:focus {
+  border-color: #007cc2;
+}
+.content.carsales .theme-hover-color-dark:hover,
+.theme-override.carsales .theme-hover-color-dark:hover {
+  color: #00468b;
+}
+.content.carsales .theme-hover-stroke-dark:hover,
+.theme-override.carsales .theme-hover-stroke-dark:hover {
+  stroke: #00468b;
+}
+.content.carsales .theme-hover-fill-dark:hover,
+.theme-override.carsales .theme-hover-fill-dark:hover {
+  fill: #00468b;
+}
+.content.carsales .theme-hover-background:hover,
+.theme-override.carsales .theme-hover-background:hover {
+  background-color: #007cc2;
+  color: white;
+}
+.content.carsales .theme-hover-background-dark:hover,
+.theme-override.carsales .theme-hover-background-dark:hover {
+  background-color: #00468b;
+  color: white;
+}
+.content.carsales .flatpickr-calendar .flatpickr-month svg,
+.theme-override.carsales .flatpickr-calendar .flatpickr-month svg {
+  stroke: #007cc2;
+}
+.content.carsales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday,
+.theme-override.carsales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday {
+  color: #007cc2;
+}
+.content.carsales .flatpickr-calendar .flatpickr-day.today,
+.theme-override.carsales .flatpickr-calendar .flatpickr-day.today {
+  border-color: #007cc2;
+}
+.content.carsales .flatpickr-calendar .flatpickr-day.selected,
+.theme-override.carsales .flatpickr-calendar .flatpickr-day.selected {
+  background-color: #007cc2;
+  border-color: #007cc2;
+}
+.content.carsales .progress-line:before,
+.theme-override.carsales .progress-line:before {
+  background-color: #007cc2;
+}
+.content.tyresales .theme-background,
+.theme-override.tyresales .theme-background {
+  background-color: #007cc2;
+  color: white;
+}
+.content.tyresales .theme-background-light,
+.theme-override.tyresales .theme-background-light {
+  background-color: #63cbe8;
+  color: white;
+}
+.content.tyresales .theme-background-dark,
+.theme-override.tyresales .theme-background-dark {
+  background-color: #00468b;
+  color: white;
+}
+.content.tyresales .theme-background-gradient,
+.theme-override.tyresales .theme-background-gradient {
+  background: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+  color: white;
+}
+.content.tyresales .theme-border,
+.theme-override.tyresales .theme-border {
+  border-color: #007cc2;
+}
+.content.tyresales .theme-border-light,
+.theme-override.tyresales .theme-border-light {
+  border-color: #63cbe8;
+}
+.content.tyresales .theme-border-dark,
+.theme-override.tyresales .theme-border-dark {
+  border-color: #00468b;
+}
+.content.tyresales .theme-color,
+.theme-override.tyresales .theme-color {
+  color: #007cc2;
+}
+.content.tyresales .theme-color-light,
+.theme-override.tyresales .theme-color-light {
+  color: #63cbe8;
+}
+.content.tyresales .theme-color-dark,
+.theme-override.tyresales .theme-color-dark {
+  color: #00468b;
+}
+.content.tyresales .theme-color-gradient,
+.theme-override.tyresales .theme-color-gradient {
+  color: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.tyresales .theme-stroke,
+.theme-override.tyresales .theme-stroke {
+  stroke: #007cc2;
+}
+.content.tyresales .theme-stroke-light,
+.theme-override.tyresales .theme-stroke-light {
+  stroke: #63cbe8;
+}
+.content.tyresales .theme-stroke-dark,
+.theme-override.tyresales .theme-stroke-dark {
+  stroke: #00468b;
+}
+.content.tyresales .theme-stroke-gradient,
+.theme-override.tyresales .theme-stroke-gradient {
+  stroke: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.tyresales .theme-fill,
+.theme-override.tyresales .theme-fill {
+  fill: #007cc2;
+}
+.content.tyresales .theme-fill-light,
+.theme-override.tyresales .theme-fill-light {
+  fill: #63cbe8;
+}
+.content.tyresales .theme-fill-dark,
+.theme-override.tyresales .theme-fill-dark {
+  fill: #00468b;
+}
+.content.tyresales .theme-fill-gradient,
+.theme-override.tyresales .theme-fill-gradient {
+  fill: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.tyresales .theme-focus-border:focus,
+.theme-override.tyresales .theme-focus-border:focus {
+  border-color: #007cc2;
+}
+.content.tyresales .theme-hover-color-dark:hover,
+.theme-override.tyresales .theme-hover-color-dark:hover {
+  color: #00468b;
+}
+.content.tyresales .theme-hover-stroke-dark:hover,
+.theme-override.tyresales .theme-hover-stroke-dark:hover {
+  stroke: #00468b;
+}
+.content.tyresales .theme-hover-fill-dark:hover,
+.theme-override.tyresales .theme-hover-fill-dark:hover {
+  fill: #00468b;
+}
+.content.tyresales .theme-hover-background:hover,
+.theme-override.tyresales .theme-hover-background:hover {
+  background-color: #007cc2;
+  color: white;
+}
+.content.tyresales .theme-hover-background-dark:hover,
+.theme-override.tyresales .theme-hover-background-dark:hover {
+  background-color: #00468b;
+  color: white;
+}
+.content.tyresales .flatpickr-calendar .flatpickr-month svg,
+.theme-override.tyresales .flatpickr-calendar .flatpickr-month svg {
+  stroke: #007cc2;
+}
+.content.tyresales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday,
+.theme-override.tyresales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday {
+  color: #007cc2;
+}
+.content.tyresales .flatpickr-calendar .flatpickr-day.today,
+.theme-override.tyresales .flatpickr-calendar .flatpickr-day.today {
+  border-color: #007cc2;
+}
+.content.tyresales .flatpickr-calendar .flatpickr-day.selected,
+.theme-override.tyresales .flatpickr-calendar .flatpickr-day.selected {
+  background-color: #007cc2;
+  border-color: #007cc2;
+}
+.content.tyresales .progress-line:before,
+.theme-override.tyresales .progress-line:before {
+  background-color: #007cc2;
+}
+.content.instantoffer .theme-background,
+.theme-override.instantoffer .theme-background {
+  background-color: #007cc2;
+  color: white;
+}
+.content.instantoffer .theme-background-light,
+.theme-override.instantoffer .theme-background-light {
+  background-color: #63cbe8;
+  color: white;
+}
+.content.instantoffer .theme-background-dark,
+.theme-override.instantoffer .theme-background-dark {
+  background-color: #00468b;
+  color: white;
+}
+.content.instantoffer .theme-background-gradient,
+.theme-override.instantoffer .theme-background-gradient {
+  background: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+  color: white;
+}
+.content.instantoffer .theme-border,
+.theme-override.instantoffer .theme-border {
+  border-color: #007cc2;
+}
+.content.instantoffer .theme-border-light,
+.theme-override.instantoffer .theme-border-light {
+  border-color: #63cbe8;
+}
+.content.instantoffer .theme-border-dark,
+.theme-override.instantoffer .theme-border-dark {
+  border-color: #00468b;
+}
+.content.instantoffer .theme-color,
+.theme-override.instantoffer .theme-color {
+  color: #007cc2;
+}
+.content.instantoffer .theme-color-light,
+.theme-override.instantoffer .theme-color-light {
+  color: #63cbe8;
+}
+.content.instantoffer .theme-color-dark,
+.theme-override.instantoffer .theme-color-dark {
+  color: #00468b;
+}
+.content.instantoffer .theme-color-gradient,
+.theme-override.instantoffer .theme-color-gradient {
+  color: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.instantoffer .theme-stroke,
+.theme-override.instantoffer .theme-stroke {
+  stroke: #007cc2;
+}
+.content.instantoffer .theme-stroke-light,
+.theme-override.instantoffer .theme-stroke-light {
+  stroke: #63cbe8;
+}
+.content.instantoffer .theme-stroke-dark,
+.theme-override.instantoffer .theme-stroke-dark {
+  stroke: #00468b;
+}
+.content.instantoffer .theme-stroke-gradient,
+.theme-override.instantoffer .theme-stroke-gradient {
+  stroke: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.instantoffer .theme-fill,
+.theme-override.instantoffer .theme-fill {
+  fill: #007cc2;
+}
+.content.instantoffer .theme-fill-light,
+.theme-override.instantoffer .theme-fill-light {
+  fill: #63cbe8;
+}
+.content.instantoffer .theme-fill-dark,
+.theme-override.instantoffer .theme-fill-dark {
+  fill: #00468b;
+}
+.content.instantoffer .theme-fill-gradient,
+.theme-override.instantoffer .theme-fill-gradient {
+  fill: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.instantoffer .theme-focus-border:focus,
+.theme-override.instantoffer .theme-focus-border:focus {
+  border-color: #007cc2;
+}
+.content.instantoffer .theme-hover-color-dark:hover,
+.theme-override.instantoffer .theme-hover-color-dark:hover {
+  color: #00468b;
+}
+.content.instantoffer .theme-hover-stroke-dark:hover,
+.theme-override.instantoffer .theme-hover-stroke-dark:hover {
+  stroke: #00468b;
+}
+.content.instantoffer .theme-hover-fill-dark:hover,
+.theme-override.instantoffer .theme-hover-fill-dark:hover {
+  fill: #00468b;
+}
+.content.instantoffer .theme-hover-background:hover,
+.theme-override.instantoffer .theme-hover-background:hover {
+  background-color: #007cc2;
+  color: white;
+}
+.content.instantoffer .theme-hover-background-dark:hover,
+.theme-override.instantoffer .theme-hover-background-dark:hover {
+  background-color: #00468b;
+  color: white;
+}
+.content.bikesales .theme-background,
+.theme-override.bikesales .theme-background {
+  background-color: #ed1c24;
+}
+.content.bikesales .theme-background-light,
+.theme-override.bikesales .theme-background-light {
+  background-color: #f28a5b;
+}
+.content.bikesales .theme-background-dark,
+.theme-override.bikesales .theme-background-dark {
+  background-color: #a50d12;
+}
+.content.bikesales .theme-background-gradient,
+.theme-override.bikesales .theme-background-gradient {
+  background: linear-gradient(to bottom, #f15f3d, #cd1623 50%, #8d170b 100%);
+}
+.content.bikesales .theme-border,
+.theme-override.bikesales .theme-border {
+  border-color: #ed1c24;
+}
+.content.bikesales .theme-border-light,
+.theme-override.bikesales .theme-border-light {
+  border-color: #f28a5b;
+}
+.content.bikesales .theme-border-dark,
+.theme-override.bikesales .theme-border-dark {
+  border-color: #a50d12;
+}
+.content.bikesales .theme-color,
+.theme-override.bikesales .theme-color {
+  color: #ed1c24;
+}
+.content.bikesales .theme-color-light,
+.theme-override.bikesales .theme-color-light {
+  color: #f28a5b;
+}
+.content.bikesales .theme-color-dark,
+.theme-override.bikesales .theme-color-dark {
+  color: #a50d12;
+}
+.content.bikesales .theme-color-gradient,
+.theme-override.bikesales .theme-color-gradient {
+  color: linear-gradient(to bottom, #f15f3d, #cd1623 50%, #8d170b 100%);
+}
+.content.bikesales .theme-stroke,
+.theme-override.bikesales .theme-stroke {
+  stroke: #ed1c24;
+}
+.content.bikesales .theme-stroke-light,
+.theme-override.bikesales .theme-stroke-light {
+  stroke: #f28a5b;
+}
+.content.bikesales .theme-stroke-dark,
+.theme-override.bikesales .theme-stroke-dark {
+  stroke: #a50d12;
+}
+.content.bikesales .theme-stroke-gradient,
+.theme-override.bikesales .theme-stroke-gradient {
+  stroke: linear-gradient(to bottom, #f15f3d, #cd1623 50%, #8d170b 100%);
+}
+.content.bikesales .theme-fill,
+.theme-override.bikesales .theme-fill {
+  fill: #ed1c24;
+}
+.content.bikesales .theme-fill-light,
+.theme-override.bikesales .theme-fill-light {
+  fill: #f28a5b;
+}
+.content.bikesales .theme-fill-dark,
+.theme-override.bikesales .theme-fill-dark {
+  fill: #a50d12;
+}
+.content.bikesales .theme-fill-gradient,
+.theme-override.bikesales .theme-fill-gradient {
+  fill: linear-gradient(to bottom, #f15f3d, #cd1623 50%, #8d170b 100%);
+}
+.content.bikesales .theme-focus-border:focus,
+.theme-override.bikesales .theme-focus-border:focus {
+  border-color: #ed1c24;
+}
+.content.bikesales .theme-hover-color-dark:hover,
+.theme-override.bikesales .theme-hover-color-dark:hover {
+  color: #a50d12;
+}
+.content.bikesales .theme-hover-stroke-dark:hover,
+.theme-override.bikesales .theme-hover-stroke-dark:hover {
+  stroke: #a50d12;
+}
+.content.bikesales .theme-hover-fill-dark:hover,
+.theme-override.bikesales .theme-hover-fill-dark:hover {
+  fill: #a50d12;
+}
+.content.bikesales .theme-hover-background:hover,
+.theme-override.bikesales .theme-hover-background:hover {
+  background-color: #ed1c24;
+  color: white;
+}
+.content.bikesales .theme-hover-background-dark:hover,
+.theme-override.bikesales .theme-hover-background-dark:hover {
+  background-color: #a50d12;
+  color: white;
+}
+.content.bikesales .flatpickr-calendar .flatpickr-month svg,
+.theme-override.bikesales .flatpickr-calendar .flatpickr-month svg {
+  stroke: #ed1c24;
+}
+.content.bikesales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday,
+.theme-override.bikesales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday {
+  color: #ed1c24;
+}
+.content.bikesales .flatpickr-calendar .flatpickr-day.today,
+.theme-override.bikesales .flatpickr-calendar .flatpickr-day.today {
+  border-color: #ed1c24;
+}
+.content.bikesales .flatpickr-calendar .flatpickr-day.selected,
+.theme-override.bikesales .flatpickr-calendar .flatpickr-day.selected {
+  background-color: #ed1c24;
+  border-color: #ed1c24;
+}
+.content.bikesales .progress-line:before,
+.theme-override.bikesales .progress-line:before {
+  background-color: #ed1c24;
+}
+.content.boatsales .theme-background,
+.theme-override.boatsales .theme-background {
+  background-color: #fec325;
+}
+.content.boatsales .theme-background-light,
+.theme-override.boatsales .theme-background-light {
+  background-color: #ffe185;
+}
+.content.boatsales .theme-background-dark,
+.theme-override.boatsales .theme-background-dark {
+  background-color: #eb9f26;
+}
+.content.boatsales .theme-background-gradient,
+.theme-override.boatsales .theme-background-gradient {
+  background: linear-gradient(to bottom, #ffe185, #fec325 50%, #eb9f26 100%);
+}
+.content.boatsales .theme-border,
+.theme-override.boatsales .theme-border {
+  border-color: #fec325;
+}
+.content.boatsales .theme-border-light,
+.theme-override.boatsales .theme-border-light {
+  border-color: #ffe185;
+}
+.content.boatsales .theme-border-dark,
+.theme-override.boatsales .theme-border-dark {
+  border-color: #eb9f26;
+}
+.content.boatsales .theme-color,
+.theme-override.boatsales .theme-color {
+  color: #fec325;
+}
+.content.boatsales .theme-color-light,
+.theme-override.boatsales .theme-color-light {
+  color: #ffe185;
+}
+.content.boatsales .theme-color-dark,
+.theme-override.boatsales .theme-color-dark {
+  color: #eb9f26;
+}
+.content.boatsales .theme-color-gradient,
+.theme-override.boatsales .theme-color-gradient {
+  color: linear-gradient(to bottom, #ffe185, #fec325 50%, #eb9f26 100%);
+}
+.content.boatsales .theme-stroke,
+.theme-override.boatsales .theme-stroke {
+  stroke: #fec325;
+}
+.content.boatsales .theme-stroke-light,
+.theme-override.boatsales .theme-stroke-light {
+  stroke: #ffe185;
+}
+.content.boatsales .theme-stroke-dark,
+.theme-override.boatsales .theme-stroke-dark {
+  stroke: #eb9f26;
+}
+.content.boatsales .theme-stroke-gradient,
+.theme-override.boatsales .theme-stroke-gradient {
+  stroke: linear-gradient(to bottom, #ffe185, #fec325 50%, #eb9f26 100%);
+}
+.content.boatsales .theme-fill,
+.theme-override.boatsales .theme-fill {
+  fill: #fec325;
+}
+.content.boatsales .theme-fill-light,
+.theme-override.boatsales .theme-fill-light {
+  fill: #ffe185;
+}
+.content.boatsales .theme-fill-dark,
+.theme-override.boatsales .theme-fill-dark {
+  fill: #eb9f26;
+}
+.content.boatsales .theme-fill-gradient,
+.theme-override.boatsales .theme-fill-gradient {
+  fill: linear-gradient(to bottom, #ffe185, #fec325 50%, #eb9f26 100%);
+}
+.content.boatsales .theme-focus-border:focus,
+.theme-override.boatsales .theme-focus-border:focus {
+  border-color: #fec325;
+}
+.content.boatsales .theme-hover-color-dark:hover,
+.theme-override.boatsales .theme-hover-color-dark:hover {
+  color: #eb9f26;
+}
+.content.boatsales .theme-hover-background:hover,
+.theme-override.boatsales .theme-hover-background:hover {
+  background-color: #fec325;
+  color: white;
+}
+.content.boatsales .theme-hover-background-dark:hover,
+.theme-override.boatsales .theme-hover-background-dark:hover {
+  background-color: #eb9f26;
+  color: white;
+}
+.content.boatsales .flatpickr-calendar .flatpickr-month svg,
+.theme-override.boatsales .flatpickr-calendar .flatpickr-month svg {
+  stroke: #fec325;
+}
+.content.boatsales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday,
+.theme-override.boatsales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday {
+  color: #fec325;
+}
+.content.boatsales .flatpickr-calendar .flatpickr-day.today,
+.theme-override.boatsales .flatpickr-calendar .flatpickr-day.today {
+  border-color: #fec325;
+}
+.content.boatsales .flatpickr-calendar .flatpickr-day.selected,
+.theme-override.boatsales .flatpickr-calendar .flatpickr-day.selected {
+  background-color: #fec325;
+  border-color: #fec325;
+}
+.content.boatsales .progress-line:before,
+.theme-override.boatsales .progress-line:before {
+  background-color: #fec325;
+}
+.content.caravancampingsales .theme-background,
+.theme-override.caravancampingsales .theme-background {
+  background-color: #4f7034;
+}
+.content.caravancampingsales .theme-background-light,
+.theme-override.caravancampingsales .theme-background-light {
+  background-color: #87b161;
+}
+.content.caravancampingsales .theme-background-dark,
+.theme-override.caravancampingsales .theme-background-dark {
+  background-color: #28593f;
+}
+.content.caravancampingsales .theme-background-gradient,
+.theme-override.caravancampingsales .theme-background-gradient {
+  background: linear-gradient(to bottom, #91a846, #586f42 32%, #143711 85%);
+}
+.content.caravancampingsales .theme-border,
+.theme-override.caravancampingsales .theme-border {
+  border-color: #4f7034;
+}
+.content.caravancampingsales .theme-border-light,
+.theme-override.caravancampingsales .theme-border-light {
+  border-color: #87b161;
+}
+.content.caravancampingsales .theme-border-dark,
+.theme-override.caravancampingsales .theme-border-dark {
+  border-color: #28593f;
+}
+.content.caravancampingsales .theme-color,
+.theme-override.caravancampingsales .theme-color {
+  color: #4f7034;
+}
+.content.caravancampingsales .theme-color-light,
+.theme-override.caravancampingsales .theme-color-light {
+  color: #87b161;
+}
+.content.caravancampingsales .theme-color-dark,
+.theme-override.caravancampingsales .theme-color-dark {
+  color: #28593f;
+}
+.content.caravancampingsales .theme-color-gradient,
+.theme-override.caravancampingsales .theme-color-gradient {
+  color: linear-gradient(to bottom, #91a846, #586f42 32%, #143711 85%);
+}
+.content.caravancampingsales .theme-stroke,
+.theme-override.caravancampingsales .theme-stroke {
+  stroke: #4f7034;
+}
+.content.caravancampingsales .theme-stroke-light,
+.theme-override.caravancampingsales .theme-stroke-light {
+  stroke: #87b161;
+}
+.content.caravancampingsales .theme-stroke-dark,
+.theme-override.caravancampingsales .theme-stroke-dark {
+  stroke: #28593f;
+}
+.content.caravancampingsales .theme-stroke-gradient,
+.theme-override.caravancampingsales .theme-stroke-gradient {
+  stroke: linear-gradient(to bottom, #91a846, #586f42 32%, #143711 85%);
+}
+.content.caravancampingsales .theme-fill,
+.theme-override.caravancampingsales .theme-fill {
+  fill: #4f7034;
+}
+.content.caravancampingsales .theme-fill-light,
+.theme-override.caravancampingsales .theme-fill-light {
+  fill: #87b161;
+}
+.content.caravancampingsales .theme-fill-dark,
+.theme-override.caravancampingsales .theme-fill-dark {
+  fill: #28593f;
+}
+.content.caravancampingsales .theme-fill-gradient,
+.theme-override.caravancampingsales .theme-fill-gradient {
+  fill: linear-gradient(to bottom, #91a846, #586f42 32%, #143711 85%);
+}
+.content.caravancampingsales .theme-focus-border:focus,
+.theme-override.caravancampingsales .theme-focus-border:focus {
+  border-color: #4f7034;
+}
+.content.caravancampingsales .theme-hover-color-dark:hover,
+.theme-override.caravancampingsales .theme-hover-color-dark:hover {
+  color: #28593f;
+}
+.content.caravancampingsales .theme-hover-background:hover,
+.theme-override.caravancampingsales .theme-hover-background:hover {
+  background-color: #4f7034;
+  color: white;
+}
+.content.caravancampingsales .theme-hover-background-dark:hover,
+.theme-override.caravancampingsales .theme-hover-background-dark:hover {
+  background-color: #28593f;
+  color: white;
+}
+.content.caravancampingsales .flatpickr-calendar .flatpickr-month svg,
+.theme-override.caravancampingsales .flatpickr-calendar .flatpickr-month svg {
+  stroke: #4f7034;
+}
+.content.caravancampingsales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday,
+.theme-override.caravancampingsales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday {
+  color: #4f7034;
+}
+.content.caravancampingsales .flatpickr-calendar .flatpickr-day.today,
+.theme-override.caravancampingsales .flatpickr-calendar .flatpickr-day.today {
+  border-color: #4f7034;
+}
+.content.caravancampingsales .flatpickr-calendar .flatpickr-day.selected,
+.theme-override.caravancampingsales .flatpickr-calendar .flatpickr-day.selected {
+  background-color: #4f7034;
+  border-color: #4f7034;
+}
+.content.caravancampingsales .progress-line:before,
+.theme-override.caravancampingsales .progress-line:before {
+  background-color: #4f7034;
+}
+.content.trucksales .theme-background,
+.theme-override.trucksales .theme-background {
+  background-color: #005289;
+  color: white;
+}
+.content.trucksales .theme-background-light,
+.theme-override.trucksales .theme-background-light {
+  background-color: #00aff9;
+  color: white;
+}
+.content.trucksales .theme-background-dark,
+.theme-override.trucksales .theme-background-dark {
+  background-color: #144a61;
+  color: white;
+}
+.content.trucksales .theme-background-gradient,
+.theme-override.trucksales .theme-background-gradient {
+  background: linear-gradient(to bottom, #62c1ea, #1589a6 45%, #143a68 94%);
+  color: white;
+}
+.content.trucksales .theme-border,
+.theme-override.trucksales .theme-border {
+  border-color: #005289;
+}
+.content.trucksales .theme-border-light,
+.theme-override.trucksales .theme-border-light {
+  border-color: #00aff9;
+}
+.content.trucksales .theme-border-dark,
+.theme-override.trucksales .theme-border-dark {
+  border-color: #144a61;
+}
+.content.trucksales .theme-color,
+.theme-override.trucksales .theme-color {
+  color: #005289;
+}
+.content.trucksales .theme-color-light,
+.theme-override.trucksales .theme-color-light {
+  color: #00aff9;
+}
+.content.trucksales .theme-color-dark,
+.theme-override.trucksales .theme-color-dark {
+  color: #144a61;
+}
+.content.trucksales .theme-color-gradient,
+.theme-override.trucksales .theme-color-gradient {
+  color: linear-gradient(to bottom, #62c1ea, #1589a6 45%, #143a68 94%);
+}
+.content.trucksales .theme-stroke,
+.theme-override.trucksales .theme-stroke {
+  stroke: #005289;
+}
+.content.trucksales .theme-stroke-light,
+.theme-override.trucksales .theme-stroke-light {
+  stroke: #00aff9;
+}
+.content.trucksales .theme-stroke-dark,
+.theme-override.trucksales .theme-stroke-dark {
+  stroke: #144a61;
+}
+.content.trucksales .theme-stroke-gradient,
+.theme-override.trucksales .theme-stroke-gradient {
+  stroke: linear-gradient(to bottom, #62c1ea, #1589a6 45%, #143a68 94%);
+}
+.content.trucksales .theme-fill,
+.theme-override.trucksales .theme-fill {
+  fill: #005289;
+}
+.content.trucksales .theme-fill-light,
+.theme-override.trucksales .theme-fill-light {
+  fill: #00aff9;
+}
+.content.trucksales .theme-fill-dark,
+.theme-override.trucksales .theme-fill-dark {
+  fill: #144a61;
+}
+.content.trucksales .theme-fill-gradient,
+.theme-override.trucksales .theme-fill-gradient {
+  fill: linear-gradient(to bottom, #62c1ea, #1589a6 45%, #143a68 94%);
+}
+.content.trucksales .theme-focus-border:focus,
+.theme-override.trucksales .theme-focus-border:focus {
+  border-color: #005289;
+}
+.content.trucksales .theme-hover-color-dark:hover,
+.theme-override.trucksales .theme-hover-color-dark:hover {
+  color: #144a61;
+}
+.content.trucksales .theme-hover-background:hover,
+.theme-override.trucksales .theme-hover-background:hover {
+  background-color: #005289;
+  color: white;
+}
+.content.trucksales .theme-hover-background-dark:hover,
+.theme-override.trucksales .theme-hover-background-dark:hover {
+  background-color: #144a61;
+  color: white;
+}
+.content.trucksales .flatpickr-calendar .flatpickr-month svg,
+.theme-override.trucksales .flatpickr-calendar .flatpickr-month svg {
+  stroke: #005289;
+}
+.content.trucksales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday,
+.theme-override.trucksales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday {
+  color: #005289;
+}
+.content.trucksales .flatpickr-calendar .flatpickr-day.today,
+.theme-override.trucksales .flatpickr-calendar .flatpickr-day.today {
+  border-color: #005289;
+}
+.content.trucksales .flatpickr-calendar .flatpickr-day.selected,
+.theme-override.trucksales .flatpickr-calendar .flatpickr-day.selected {
+  background-color: #005289;
+  border-color: #005289;
+}
+.content.trucksales .progress-line:before,
+.theme-override.trucksales .progress-line:before {
+  background-color: #005289;
+}
+.content.constructionsales .theme-background,
+.theme-override.constructionsales .theme-background {
+  background-color: #ffa522;
+  color: white;
+}
+.content.constructionsales .theme-background-light,
+.theme-override.constructionsales .theme-background-light {
+  background-color: #ffd14e;
+  color: white;
+}
+.content.constructionsales .theme-background-dark,
+.theme-override.constructionsales .theme-background-dark {
+  background-color: #ff8b22;
+  color: white;
+}
+.content.constructionsales .theme-background-gradient,
+.theme-override.constructionsales .theme-background-gradient {
+  background: linear-gradient(to bottom, #ffc04e, #f59413 30%, #ff631c 100%);
+  color: white;
+}
+.content.constructionsales .theme-border,
+.theme-override.constructionsales .theme-border {
+  border-color: #ffa522;
+}
+.content.constructionsales .theme-border-light,
+.theme-override.constructionsales .theme-border-light {
+  border-color: #ffd14e;
+}
+.content.constructionsales .theme-border-dark,
+.theme-override.constructionsales .theme-border-dark {
+  border-color: #ff8b22;
+}
+.content.constructionsales .theme-color,
+.theme-override.constructionsales .theme-color {
+  color: #ffa522;
+}
+.content.constructionsales .theme-color-light,
+.theme-override.constructionsales .theme-color-light {
+  color: #ffd14e;
+}
+.content.constructionsales .theme-color-dark,
+.theme-override.constructionsales .theme-color-dark {
+  color: #ff8b22;
+}
+.content.constructionsales .theme-color-gradient,
+.theme-override.constructionsales .theme-color-gradient {
+  color: linear-gradient(to bottom, #ffc04e, #f59413 30%, #ff631c 100%);
+}
+.content.constructionsales .theme-stroke,
+.theme-override.constructionsales .theme-stroke {
+  stroke: #ffa522;
+}
+.content.constructionsales .theme-stroke-light,
+.theme-override.constructionsales .theme-stroke-light {
+  stroke: #ffd14e;
+}
+.content.constructionsales .theme-stroke-dark,
+.theme-override.constructionsales .theme-stroke-dark {
+  stroke: #ff8b22;
+}
+.content.constructionsales .theme-stroke-gradient,
+.theme-override.constructionsales .theme-stroke-gradient {
+  stroke: linear-gradient(to bottom, #ffc04e, #f59413 30%, #ff631c 100%);
+}
+.content.constructionsales .theme-fill,
+.theme-override.constructionsales .theme-fill {
+  fill: #ffa522;
+}
+.content.constructionsales .theme-fill-light,
+.theme-override.constructionsales .theme-fill-light {
+  fill: #ffd14e;
+}
+.content.constructionsales .theme-fill-dark,
+.theme-override.constructionsales .theme-fill-dark {
+  fill: #ff8b22;
+}
+.content.constructionsales .theme-fill-gradient,
+.theme-override.constructionsales .theme-fill-gradient {
+  fill: linear-gradient(to bottom, #ffc04e, #f59413 30%, #ff631c 100%);
+}
+.content.constructionsales .theme-focus-border:focus,
+.theme-override.constructionsales .theme-focus-border:focus {
+  border-color: #ffa522;
+}
+.content.constructionsales .theme-hover-color-dark:hover,
+.theme-override.constructionsales .theme-hover-color-dark:hover {
+  color: #ff8b22;
+}
+.content.constructionsales .theme-hover-background:hover,
+.theme-override.constructionsales .theme-hover-background:hover {
+  background-color: #ffa522;
+  color: white;
+}
+.content.constructionsales .theme-hover-background-dark:hover,
+.theme-override.constructionsales .theme-hover-background-dark:hover {
+  background-color: #ff8b22;
+  color: white;
+}
+.content.constructionsales .flatpickr-calendar .flatpickr-month svg,
+.theme-override.constructionsales .flatpickr-calendar .flatpickr-month svg {
+  stroke: #ffa522;
+}
+.content.constructionsales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday,
+.theme-override.constructionsales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday {
+  color: #ffa522;
+}
+.content.constructionsales .flatpickr-calendar .flatpickr-day.today,
+.theme-override.constructionsales .flatpickr-calendar .flatpickr-day.today {
+  border-color: #ffa522;
+}
+.content.constructionsales .flatpickr-calendar .flatpickr-day.selected,
+.theme-override.constructionsales .flatpickr-calendar .flatpickr-day.selected {
+  background-color: #ffa522;
+  border-color: #ffa522;
+}
+.content.constructionsales .progress-line:before,
+.theme-override.constructionsales .progress-line:before {
+  background-color: #ffa522;
+}
+.content.farmmachinerysales .theme-background,
+.theme-override.farmmachinerysales .theme-background {
+  background-color: #4da32f;
+}
+.content.farmmachinerysales .theme-background-light,
+.theme-override.farmmachinerysales .theme-background-light {
+  background-color: #94bf67;
+}
+.content.farmmachinerysales .theme-background-dark,
+.theme-override.farmmachinerysales .theme-background-dark {
+  background-color: #266e44;
+}
+.content.farmmachinerysales .theme-background-gradient,
+.theme-override.farmmachinerysales .theme-background-gradient {
+  background: linear-gradient(to bottom, #9dba49, #4d862f 30%, #265744 100%);
+}
+.content.farmmachinerysales .theme-border,
+.theme-override.farmmachinerysales .theme-border {
+  border-color: #4da32f;
+}
+.content.farmmachinerysales .theme-border-light,
+.theme-override.farmmachinerysales .theme-border-light {
+  border-color: #94bf67;
+}
+.content.farmmachinerysales .theme-border-dark,
+.theme-override.farmmachinerysales .theme-border-dark {
+  border-color: #266e44;
+}
+.content.farmmachinerysales .theme-color,
+.theme-override.farmmachinerysales .theme-color {
+  color: #4da32f;
+}
+.content.farmmachinerysales .theme-color-light,
+.theme-override.farmmachinerysales .theme-color-light {
+  color: #94bf67;
+}
+.content.farmmachinerysales .theme-color-dark,
+.theme-override.farmmachinerysales .theme-color-dark {
+  color: #266e44;
+}
+.content.farmmachinerysales .theme-color-gradient,
+.theme-override.farmmachinerysales .theme-color-gradient {
+  color: linear-gradient(to bottom, #9dba49, #4d862f 30%, #265744 100%);
+}
+.content.farmmachinerysales .theme-stroke,
+.theme-override.farmmachinerysales .theme-stroke {
+  stroke: #4da32f;
+}
+.content.farmmachinerysales .theme-stroke-light,
+.theme-override.farmmachinerysales .theme-stroke-light {
+  stroke: #94bf67;
+}
+.content.farmmachinerysales .theme-stroke-dark,
+.theme-override.farmmachinerysales .theme-stroke-dark {
+  stroke: #266e44;
+}
+.content.farmmachinerysales .theme-stroke-gradient,
+.theme-override.farmmachinerysales .theme-stroke-gradient {
+  stroke: linear-gradient(to bottom, #9dba49, #4d862f 30%, #265744 100%);
+}
+.content.farmmachinerysales .theme-fill,
+.theme-override.farmmachinerysales .theme-fill {
+  fill: #4da32f;
+}
+.content.farmmachinerysales .theme-fill-light,
+.theme-override.farmmachinerysales .theme-fill-light {
+  fill: #94bf67;
+}
+.content.farmmachinerysales .theme-fill-dark,
+.theme-override.farmmachinerysales .theme-fill-dark {
+  fill: #266e44;
+}
+.content.farmmachinerysales .theme-fill-gradient,
+.theme-override.farmmachinerysales .theme-fill-gradient {
+  fill: linear-gradient(to bottom, #9dba49, #4d862f 30%, #265744 100%);
+}
+.content.farmmachinerysales .theme-focus-border:focus,
+.theme-override.farmmachinerysales .theme-focus-border:focus {
+  border-color: #4da32f;
+}
+.content.farmmachinerysales .theme-hover-color-dark:hover,
+.theme-override.farmmachinerysales .theme-hover-color-dark:hover {
+  color: #266e44;
+}
+.content.farmmachinerysales .theme-hover-background:hover,
+.theme-override.farmmachinerysales .theme-hover-background:hover {
+  background-color: #4da32f;
+  color: white;
+}
+.content.farmmachinerysales .theme-hover-background-dark:hover,
+.theme-override.farmmachinerysales .theme-hover-background-dark:hover {
+  background-color: #266e44;
+  color: white;
+}
+.content.farmmachinerysales .flatpickr-calendar .flatpickr-month svg,
+.theme-override.farmmachinerysales .flatpickr-calendar .flatpickr-month svg {
+  stroke: #4da32f;
+}
+.content.farmmachinerysales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday,
+.theme-override.farmmachinerysales .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday {
+  color: #4da32f;
+}
+.content.farmmachinerysales .flatpickr-calendar .flatpickr-day.today,
+.theme-override.farmmachinerysales .flatpickr-calendar .flatpickr-day.today {
+  border-color: #4da32f;
+}
+.content.farmmachinerysales .flatpickr-calendar .flatpickr-day.selected,
+.theme-override.farmmachinerysales .flatpickr-calendar .flatpickr-day.selected {
+  background-color: #4da32f;
+  border-color: #4da32f;
+}
+.content.farmmachinerysales .progress-line:before,
+.theme-override.farmmachinerysales .progress-line:before {
+  background-color: #4da32f;
+}
+.content.demotores .theme-background,
+.theme-override.demotores .theme-background {
+  background-color: #007cc2;
+  color: white;
+}
+.content.demotores .theme-background-light,
+.theme-override.demotores .theme-background-light {
+  background-color: #63cbe8;
+}
+.content.demotores .theme-background-dark,
+.theme-override.demotores .theme-background-dark {
+  background-color: #00468b;
+}
+.content.demotores .theme-background-gradient,
+.theme-override.demotores .theme-background-gradient {
+  background-color: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.demotores .theme-border,
+.theme-override.demotores .theme-border {
+  border-color: #007cc2;
+}
+.content.demotores .theme-border-light,
+.theme-override.demotores .theme-border-light {
+  border-color: #63cbe8;
+}
+.content.demotores .theme-border-dark,
+.theme-override.demotores .theme-border-dark {
+  border-color: #00468b;
+}
+.content.demotores .theme-border-gradient,
+.theme-override.demotores .theme-border-gradient {
+  border-color: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.demotores .theme-color,
+.theme-override.demotores .theme-color {
+  color: #007cc2;
+}
+.content.demotores .theme-color-light,
+.theme-override.demotores .theme-color-light {
+  color: #63cbe8;
+}
+.content.demotores .theme-color-dark,
+.theme-override.demotores .theme-color-dark {
+  color: #00468b;
+}
+.content.demotores .theme-color-gradient,
+.theme-override.demotores .theme-color-gradient {
+  color: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.demotores .theme-stroke,
+.theme-override.demotores .theme-stroke {
+  stroke: #007cc2;
+}
+.content.demotores .theme-stroke-light,
+.theme-override.demotores .theme-stroke-light {
+  stroke: #63cbe8;
+}
+.content.demotores .theme-stroke-dark,
+.theme-override.demotores .theme-stroke-dark {
+  stroke: #00468b;
+}
+.content.demotores .theme-stroke-gradient,
+.theme-override.demotores .theme-stroke-gradient {
+  stroke: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.demotores .theme-fill,
+.theme-override.demotores .theme-fill {
+  fill: #007cc2;
+}
+.content.demotores .theme-fill-light,
+.theme-override.demotores .theme-fill-light {
+  fill: #63cbe8;
+}
+.content.demotores .theme-fill-dark,
+.theme-override.demotores .theme-fill-dark {
+  fill: #00468b;
+}
+.content.demotores .theme-fill-gradient,
+.theme-override.demotores .theme-fill-gradient {
+  fill: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.demotores .theme-focus-border:focus,
+.theme-override.demotores .theme-focus-border:focus {
+  border-color: #007cc2;
+}
+.content.demotores .theme-hover-color-dark:hover,
+.theme-override.demotores .theme-hover-color-dark:hover {
+  color: #00468b;
+}
+.content.demotores .theme-hover-background:hover,
+.theme-override.demotores .theme-hover-background:hover {
+  background-color: #007cc2;
+  color: white;
+}
+.content.demotores .theme-hover-background-dark:hover,
+.theme-override.demotores .theme-hover-background-dark:hover {
+  background-color: #00468b;
+  color: white;
+}
+.content.demotores .btn-primary,
+.theme-override.demotores .btn-primary {
+  color: white;
+}
+.content.demotores .flatpickr-calendar .flatpickr-month svg,
+.theme-override.demotores .flatpickr-calendar .flatpickr-month svg {
+  stroke: #007cc2;
+}
+.content.demotores .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday,
+.theme-override.demotores .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday {
+  color: #007cc2;
+}
+.content.demotores .flatpickr-calendar .flatpickr-day.today,
+.theme-override.demotores .flatpickr-calendar .flatpickr-day.today {
+  border-color: #007cc2;
+}
+.content.demotores .flatpickr-calendar .flatpickr-day.selected,
+.theme-override.demotores .flatpickr-calendar .flatpickr-day.selected {
+  background-color: #007cc2;
+  border-color: #007cc2;
+}
+.content.demotores .progress-line:before,
+.theme-override.demotores .progress-line:before {
+  background-color: #007cc2;
+}
+.content.chileautos .theme-background,
+.theme-override.chileautos .theme-background {
+  background-color: #004d99;
+}
+.content.chileautos .theme-background-light,
+.theme-override.chileautos .theme-background-light {
+  background-color: #0080ff;
+}
+.content.chileautos .theme-background-dark,
+.theme-override.chileautos .theme-background-dark {
+  background-color: #003366;
+}
+.content.chileautos .theme-background-gradient,
+.theme-override.chileautos .theme-background-gradient {
+  background-color: linear-gradient(to bottom, #0080ff, #004d99 50%, #003366 100%);
+}
+.content.chileautos .theme-border,
+.theme-override.chileautos .theme-border {
+  border-color: #004d99;
+}
+.content.chileautos .theme-border-light,
+.theme-override.chileautos .theme-border-light {
+  border-color: #0080ff;
+}
+.content.chileautos .theme-border-dark,
+.theme-override.chileautos .theme-border-dark {
+  border-color: #003366;
+}
+.content.chileautos .theme-border-gradient,
+.theme-override.chileautos .theme-border-gradient {
+  border-color: linear-gradient(to bottom, #0080ff, #004d99 50%, #003366 100%);
+}
+.content.chileautos .theme-color,
+.theme-override.chileautos .theme-color {
+  color: #004d99;
+}
+.content.chileautos .theme-color-light,
+.theme-override.chileautos .theme-color-light {
+  color: #0080ff;
+}
+.content.chileautos .theme-color-dark,
+.theme-override.chileautos .theme-color-dark {
+  color: #003366;
+}
+.content.chileautos .theme-color-gradient,
+.theme-override.chileautos .theme-color-gradient {
+  color: linear-gradient(to bottom, #0080ff, #004d99 50%, #003366 100%);
+}
+.content.chileautos .theme-stroke,
+.theme-override.chileautos .theme-stroke {
+  stroke: #004d99;
+}
+.content.chileautos .theme-stroke-light,
+.theme-override.chileautos .theme-stroke-light {
+  stroke: #0080ff;
+}
+.content.chileautos .theme-stroke-dark,
+.theme-override.chileautos .theme-stroke-dark {
+  stroke: #003366;
+}
+.content.chileautos .theme-stroke-gradient,
+.theme-override.chileautos .theme-stroke-gradient {
+  stroke: linear-gradient(to bottom, #0080ff, #004d99 50%, #003366 100%);
+}
+.content.chileautos .theme-fill,
+.theme-override.chileautos .theme-fill {
+  fill: #004d99;
+}
+.content.chileautos .theme-fill-light,
+.theme-override.chileautos .theme-fill-light {
+  fill: #0080ff;
+}
+.content.chileautos .theme-fill-dark,
+.theme-override.chileautos .theme-fill-dark {
+  fill: #003366;
+}
+.content.chileautos .theme-fill-gradient,
+.theme-override.chileautos .theme-fill-gradient {
+  fill: linear-gradient(to bottom, #0080ff, #004d99 50%, #003366 100%);
+}
+.content.chileautos .theme-focus-border:focus,
+.theme-override.chileautos .theme-focus-border:focus {
+  border-color: #004d99;
+}
+.content.chileautos .theme-hover-color-dark:hover,
+.theme-override.chileautos .theme-hover-color-dark:hover {
+  color: #003366;
+}
+.content.chileautos .theme-hover-background:hover,
+.theme-override.chileautos .theme-hover-background:hover {
+  background-color: #004d99;
+  color: white;
+}
+.content.chileautos .theme-hover-background-dark:hover,
+.theme-override.chileautos .theme-hover-background-dark:hover {
+  background-color: #003366;
+  color: white;
+}
+.content.chileautos .btn-primary,
+.theme-override.chileautos .btn-primary {
+  color: white;
+}
+.content.chileautos .flatpickr-calendar .flatpickr-month svg,
+.theme-override.chileautos .flatpickr-calendar .flatpickr-month svg {
+  stroke: #004d99;
+}
+.content.chileautos .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday,
+.theme-override.chileautos .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday {
+  color: #004d99;
+}
+.content.chileautos .flatpickr-calendar .flatpickr-day.today,
+.theme-override.chileautos .flatpickr-calendar .flatpickr-day.today {
+  border-color: #004d99;
+}
+.content.chileautos .flatpickr-calendar .flatpickr-day.selected,
+.theme-override.chileautos .flatpickr-calendar .flatpickr-day.selected {
+  background-color: #004d99;
+  border-color: #004d99;
+}
+.content.chileautos .progress-line:before,
+.theme-override.chileautos .progress-line:before {
+  background-color: #004d99;
+}
+.content.soloautos .theme-background,
+.theme-override.soloautos .theme-background {
+  background-color: #007cc2;
+}
+.content.soloautos .theme-background-light,
+.theme-override.soloautos .theme-background-light {
+  background-color: #63cbe8;
+}
+.content.soloautos .theme-background-dark,
+.theme-override.soloautos .theme-background-dark {
+  background-color: #00468b;
+}
+.content.soloautos .theme-background-gradient,
+.theme-override.soloautos .theme-background-gradient {
+  background-color: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.soloautos .theme-border,
+.theme-override.soloautos .theme-border {
+  border-color: #007cc2;
+}
+.content.soloautos .theme-border-light,
+.theme-override.soloautos .theme-border-light {
+  border-color: #63cbe8;
+}
+.content.soloautos .theme-border-dark,
+.theme-override.soloautos .theme-border-dark {
+  border-color: #00468b;
+}
+.content.soloautos .theme-border-gradient,
+.theme-override.soloautos .theme-border-gradient {
+  border-color: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.soloautos .theme-color,
+.theme-override.soloautos .theme-color {
+  color: #007cc2;
+}
+.content.soloautos .theme-color-light,
+.theme-override.soloautos .theme-color-light {
+  color: #63cbe8;
+}
+.content.soloautos .theme-color-dark,
+.theme-override.soloautos .theme-color-dark {
+  color: #00468b;
+}
+.content.soloautos .theme-color-gradient,
+.theme-override.soloautos .theme-color-gradient {
+  color: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.soloautos .theme-stroke,
+.theme-override.soloautos .theme-stroke {
+  stroke: #007cc2;
+}
+.content.soloautos .theme-stroke-light,
+.theme-override.soloautos .theme-stroke-light {
+  stroke: #63cbe8;
+}
+.content.soloautos .theme-stroke-dark,
+.theme-override.soloautos .theme-stroke-dark {
+  stroke: #00468b;
+}
+.content.soloautos .theme-stroke-gradient,
+.theme-override.soloautos .theme-stroke-gradient {
+  stroke: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.soloautos .theme-fill,
+.theme-override.soloautos .theme-fill {
+  fill: #007cc2;
+}
+.content.soloautos .theme-fill-light,
+.theme-override.soloautos .theme-fill-light {
+  fill: #63cbe8;
+}
+.content.soloautos .theme-fill-dark,
+.theme-override.soloautos .theme-fill-dark {
+  fill: #00468b;
+}
+.content.soloautos .theme-fill-gradient,
+.theme-override.soloautos .theme-fill-gradient {
+  fill: linear-gradient(to bottom, #63cbe8, #007cc2 60%, #00468b 100%);
+}
+.content.soloautos .theme-focus-border:focus,
+.theme-override.soloautos .theme-focus-border:focus {
+  border-color: #007cc2;
+}
+.content.soloautos .theme-hover-color-dark:hover,
+.theme-override.soloautos .theme-hover-color-dark:hover {
+  color: #00468b;
+}
+.content.soloautos .theme-hover-background:hover,
+.theme-override.soloautos .theme-hover-background:hover {
+  background-color: #007cc2;
+  color: white;
+}
+.content.soloautos .theme-hover-background-dark:hover,
+.theme-override.soloautos .theme-hover-background-dark:hover {
+  background-color: #00468b;
+  color: white;
+}
+.content.soloautos .btn-primary,
+.theme-override.soloautos .btn-primary {
+  color: white;
+}
+.content.soloautos .flatpickr-calendar .flatpickr-month svg,
+.theme-override.soloautos .flatpickr-calendar .flatpickr-month svg {
+  stroke: #007cc2;
+}
+.content.soloautos .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday,
+.theme-override.soloautos .flatpickr-calendar .flatpickr-weekdays span.flatpickr-weekday {
+  color: #007cc2;
+}
+.content.soloautos .flatpickr-calendar .flatpickr-day.today,
+.theme-override.soloautos .flatpickr-calendar .flatpickr-day.today {
+  border-color: #007cc2;
+}
+.content.soloautos .flatpickr-calendar .flatpickr-day.selected,
+.theme-override.soloautos .flatpickr-calendar .flatpickr-day.selected {
+  background-color: #007cc2;
+  border-color: #007cc2;
+}
+.content.soloautos .progress-line:before,
+.theme-override.soloautos .progress-line:before {
+  background-color: #007cc2;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  color: #333333;
+  line-height: 18px;
+}
+a {
+  color: #1b83c4;
+}
+a:hover {
+  color: #309ee2;
+}
+a:active {
+  color: #309ee2;
+}
+h1 {
+  font-size: 26px;
+  font-weight: 400;
+}
+.page-content {
+  background-image: url("/access-content/Content/images/carsales-join.jpg");
+  background-size: cover;
+  padding-bottom: 50px;
+  min-height: 100vh;
+}
+.carsales .page-content {
+  background-image: url("/access-content/Content/images/carsales-join.jpg");
+}
+.tyresales .page-content {
+  background-image: url("https://tyresales-static-dh.s3-ap-southeast-2.amazonaws.com/images/membership/tyresales-join.jpg");
+}
+.tyresales .logo {
+  width: 250px;
+  padding: 0px 0px 0px 0px;
+}
+.bikesales .page-content {
+  background-image: url(https://bikesales.com.au/content-seller/v2/images/bike/hero-image.jpg);
+}
+.boatsales .page-content {
+  background-image: url(https://boatsales.com.au/content-seller/v2/images/boat/hero-image.jpg);
+}
+.caravancampingsales .page-content {
+  background-image: url(https://caravancampingsales.com.au/content-seller/v2/images/caravan/hero-image.jpg);
+}
+.caravancampingsales .page-content:before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0px;
+  left: 0px;
+}
+.caravancampingsales .logo {
+  width: 250px;
+}
+.trucksales .page-content {
+  background-image: url(https://trucksales.com.au/content-seller/v2/images/truck/hero-image.jpg);
+  position: relative;
+}
+.trucksales .page-content:before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0px;
+  left: 0px;
+}
+.farmmachinerysales .page-content {
+  background-image: url(https://farmmachinerysales.com.au/content-seller/v2/images/farm/hero-image.jpg);
+  position: relative;
+}
+.farmmachinerysales .page-content:before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0px;
+  left: 0px;
+}
+.farmmachinerysales .logo {
+  width: 250px;
+}
+.constructionsales .page-content {
+  background-image: url(https://constructionsales.com.au/content-seller/v2/images/construction/hero-image.jpg);
+  position: relative;
+}
+.constructionsales .page-content:before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0px;
+  left: 0px;
+}
+.constructionsales .logo {
+  width: 250px;
+}
+.existing-member-message {
+  display: none;
+}
+.action-success {
+  padding: 10px 0px 10px 0px;
+}
+.action-success p {
+  color: #28a745;
+}
+.service-error {
+  padding: 10px 0px 10px 0px;
+}
+.service-error p {
+  color: #d0021b;
+}
+.is-existing-member .page-status.existing-member-message {
+  display: block;
+  margin-bottom: 15px;
+}
+@media (min-width: 1024px) {
+  .product {
+    position: absolute;
+    left: 50%;
+    top: 170px;
+    margin-left: 300px;
+  }
+  .signin .product {
+    top: 150px;
+  }
+}
+.member {
+  padding: 30px 30px 30px;
+  position: relative;
+  margin: 0;
+  border: 1px solid #cccccc;
+  margin: 0px auto;
+  background: white;
+  width: 500px;
+  border-radius: 5px;
+}
+.logo {
+  width: 150px;
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
+  position: relative;
+}
+.logo-image {
+  padding: 20px 0px 20px 0px;
+  width: auto;
+}
+.logo-image img {
+  display: block;
+  margin: 0px auto;
+}
+.terms {
+  margin-top: 30px;
+}
+.terms p {
+  line-height: 28px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+.form-row {
+  margin-top: 20px;
+  position: relative;
+}
+.has-validation-error .error-message {
+  margin: 0px;
+  line-height: 18px;
+  padding: 5px;
+  background: #d0021b;
+  color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  list-style-type: none;
+  display: block;
+}
+.form-submit {
+  margin-top: 20px;
+}
+.form-footer {
+  margin-top: 10px;
+}
+.btn {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  text-align: center;
+  line-height: 42px;
+  min-height: 42px;
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 21px;
+  margin: 0 auto;
+  outline: none;
+  cursor: pointer;
+  border-style: solid;
+  background: white;
+  border-width: 1px;
+  color: white;
+  width: 100%;
+  text-decoration: none;
+}
+.create-account .btn,
+.signin .btn,
+.forgotten-password .btn {
+  max-width: 300px;
+}
+.forgotten-password p {
+  margin-top: 20px;
+}
+/* Legacy */
+
+.segment-centred {
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 15px 15px 15px 15px;
+  color: #999999;
+  font-size: 11px;
+  font-weight: bold;
+  height: 31px;
+  left: 50%;
+  line-height: 31px;
+  margin-left: -16px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: -16px;
+  width: 31px;
+  z-index: 2;
+}
+.panel-secondary {
+  border-top: 1px solid #cccccc;
+  margin-top: 40px;
+}
+.sign-in-with {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.facebook-action {
+  background: url("../front/FB-f-Logo__blue_50.png") no-repeat scroll #3b5998 !important;
+  border: 0px;
+  border-radius: 3px 3px 3px 3px;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  padding: 43px 25px 7px 25px;
+  float: right;
+  margin-right: 30px;
+}
+.google-action {
+  background: url("../front/btn_red.png") no-repeat scroll #dd4b39 5px !important;
+  border: 0px;
+  border-radius: 3px 3px 3px 3px;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  padding: 43px 25px 7px 25px;
+  float: left;
+  margin-left: 30px;
+}
+.social-options {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.social-options li {
+  width: 25%;
+  float: left;
+}
+.social-options li:first-child {
+  margin-left: 25%;
+}
+.social-options li:last-child {
+  margin-right: 25%;
+}
+.already-member {
+  text-align: center;
+  margin-top: 20px;
+}
+.signin .benefits {
+  margin-top: 0px;
+}
+.benefits {
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  max-width: 500px;
+  margin: 0px auto;
+  margin-top: 60px;
+}
+.benefits p {
+  font-size: 16px;
+  color: white;
+  margin-top: 15px;
+  padding-right: 20px;
+  line-height: 20px;
+  position: relative;
+}
+.benefits h2 {
+  position: relative;
+  font-size: 22px;
+  color: white;
+  line-height: 26px;
+}
+.benefits ul {
+  margin-top: 20px;
+}
+.benefits ul li {
+  padding-left: 35px;
+  position: relative;
+  line-height: 60px;
+  float: left;
+  width: 50%;
+}
+.benefits ul li:last-child {
+  width: 100%;
+  text-align: center;
+  padding-right: 200px;
+}
+.benefits ul li:last-child > i {
+  display: inline-block;
+  position: static;
+  display: none;
+}
+.benefits ul li > i {
+  display: block;
+  line-height: 1em;
+  margin: 0 auto;
+  width: 48px;
+  height: 58px;
+  position: absolute;
+  top: 18px;
+  left: 0px;
+}
+@media (min-width: 1024px) {
+  .benefits ul li {
+    float: none;
+    width: 100%;
+  }
+  .benefits ul li:last-child {
+    width: 100%;
+    text-align: left;
+    padding-right: 0px;
+  }
+  .benefits ul li:last-child > i {
+    position: absolute;
+    display: block;
+  }
+}
+.instantoffer .benefits ul li {
+  width: 50%;
+}
+.instant-offer-benefits {
+  text-align: center;
+}
+.instant-offer-benefits h2 {
+  color: white;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.instant-offer-benefits p {
+  color: white;
+  padding: 0px 0px 10px 0px;
+}
+.show {
+  margin-top: 20px;
+}
+.password-status {
+  display: none;
+}
+.strength0 {
+  border-top: 5px solid transparent;
+  display: none;
+}
+.strength0.strength1 {
+  border-top-color: red;
+  width: 20%;
+}
+.strength0.strength1.strength2 {
+  width: 40%;
+  border-top-color: #ff5f5f;
+}
+.strength0.strength1.strength2.strength3 {
+  width: 60%;
+  border-top-color: #56e500;
+}
+.strength0.strength1.strength2.strength4 {
+  border-top-color: #4dcd00;
+  width: 80%;
+}
+.strength0.strength1.strength2.strength4.strength5 {
+  border-top-color: #399800;
+  width: 100%;
+}
+.aside-member-centre {
+  margin-top: 20px;
+}
+.aside-member-centre ul {
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.aside-member-centre li {
+  list-style-type: disc;
+  margin-left: 17px;
+}

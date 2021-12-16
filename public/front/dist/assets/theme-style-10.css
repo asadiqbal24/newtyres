@@ -1,0 +1,425 @@
+/*custom-css*/
+.sc-hZSUBg.sc-itybZL.huXSnK {
+    display: none;
+}
+.sc-hZSUBg.sc-kZmsYB.jvVwcU {
+    display: none;
+}
+.top-strip {
+    background: rgba(224, 224, 224, 1) !important;
+    padding: 10px;
+}
+
+.h-info i {
+    color: #e51e25;
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.h-info a {
+    color: #000;
+    font-size: 19px;
+}
+.h-info a {
+    margin-right: 15px;
+}
+.h-info a:hover {
+    text-decoration: none;
+    color: #e51e25;
+}
+.social-icons {
+    float: right;
+    position: relative;
+    top: -5px;
+}
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    padding-top: 4px;
+    background: #e51e25;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 4px;
+}
+.sticky-header {
+    position: unset;
+}
+
+.logo-section img {
+    width: 100%;
+}
+.main-site-home-icon{
+    margin-left: 55px;
+}
+.main-site-menu-items{
+    margin-left: 0px;
+}
+.sc-hZSUBg.sc-gohEOc.searchdiv-bg {
+    background: #e8373d;
+}
+.unset-bg{
+    background:unset !important;
+}
+.tyre-btn {
+    background: #000 !important;
+    border:1px solid #000;
+}
+
+.hv-trouble.sc-hMFtBS.gWLzxB {
+    margin-top: -60px;
+    position: relative;
+    top: -82px;
+}
+.tyre-btn.f-t {
+    margin-bottom: 25px;
+}
+.sc-bvCTgw.jmkjzV a {
+    color: #000;
+}
+.hv-trouble a {
+    color: #000;
+}
+.tyre-btn.f-t {
+    margin-bottom: 25px;
+    background: #000 !important;
+}
+.sc-idjmjb.tyre-btn.gGfiDU {
+    background: unset !important;
+}
+.sc-hMFtBS.gWLzxB.h-trouble-2 {
+    margin-top: -60px !important;
+    position: relative;
+    top: -18px;
+    float: right;
+    right: -265px;
+}
+.f-w-c {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+.banner-section {
+    margin-bottom: 20px;
+    margin-top:-10px;
+}
+.banner-section .carousel-indicators {
+    display: none;
+}
+
+.work-points h6 {
+    color: #e8373d;
+    font-size: 20px;
+}
+.work-points {
+    text-align: center;
+}
+.how-work-section h2 {
+    font-family: 'Asap', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    margin-block-start: 10px;
+    font-size: 45px;
+}
+.how-work-section h5 {
+    font-family: 'Asap', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    margin-block-start: 10px;
+    font-size: 25px;
+}
+
+
+.product-images img {
+    width: 100%;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.pl-r {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.work-points {
+    border: 1px solid #bdbbbb;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.how-work-section {
+    margin-top: 20px;
+}
+.hYijQi{
+    height:auto !important;
+}
+.testimonial-secion .carousel-caption {
+    position: relative;
+    text-align: center;
+}
+.testimonial-secion .carousel-control {
+    background: none !important;
+    color: #000;
+}
+.testimonial-secion .carousel-caption {
+    position: relative;
+    text-align: center;
+}
+.testimonial-secion .carousel-caption h5 {
+    color: #000;
+    text-shadow: none;
+    font-weight: bold;
+}
+.testimonial-secion .carousel-caption h5 span {
+    color: #a4a4a4;
+}
+.testimonial-secion .carousel-control {
+    background: none !important;
+    color: #000;
+}
+.testimonial-secion .carousel-caption {
+    left: 0;
+    right: 0;
+}
+.testimonial-secion .carousel-caption p {
+    text-shadow: none;
+    color: #000;
+    margin-top: 25px;
+}
+.text-center.heading h2 {
+    margin-top: 10px;
+    font-family: 'Asap', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+.text-center.heading span {
+    font-size: 16px;
+    color: #828181;
+}
+
+.main-footer {
+    background: url(http://www.tyreflicks.com.au/new/public/assets/images/footer-bg.jpg) no-repeat;
+        background-size: auto;
+    background-size: cover;
+}
+.pre-footer p {
+    color: #e8373d;
+    font-size: 30px;
+}
+.pre-footer {
+    background: #000;
+    padding: 10px;
+padding-top: 30px;
+
+}
+.pre-footer a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.footer-widget h4 {
+    color: #fff;
+    border-bottom: 1px solid #e8373d;
+    padding-bottom: 5px;
+    margin-top:15px;
+    margin-bottom:20px;
+    
+}
+.footer-widget .social-icons {
+    text-align: left;
+    float: unset;
+    margin-top: 20px;
+}
+.footer-widget ul li {
+    color: #fff;
+    list-style: none;
+}
+.footer-widget ul li a {
+    color: #c1c1c1;
+    line-height: 25px;
+}
+.footer-widget input[type="email"] {
+    border: none;
+    width: 85%;
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 15px;
+    background: transparent;
+    border: 1px solid #9f9f9f;
+    color: #fff;
+}
+.footer-widget input[type="submit"] {
+    background: red;
+    width: 12%;
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 6px;
+    color: #fff;
+}
+.footer-contact ul li {
+    list-style: none;
+    color: #c1c1c1;
+    font-size: 16px;
+}
+.footer-contact ul li a {
+    color: #c1c1c1;
+}
+.footer-contact ul li i {
+    margin-right: 10px;
+}
+.footer-contact ul {
+    padding-left: 0px;
+}
+.container.main-footer-area {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-bottom-copyright {
+    background: #000;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.f-items {
+    padding-left: 10px;
+}
+.footer-widget ul li::before {
+    position: absolute;
+    left: 0px;
+    font-size: 8px;
+    content: "\f054";
+    font: normal normal normal 14px/1 FontAwesome;
+        font-size: 14px;
+        line-height: 1;
+    content: "\f054";
+    font-size: 12px;
+    line-height: 25px;
+    color: #bdbcbc;
+}
+
+.footer-bottom-copyright p {
+    color: #e1e1e1;
+}
+.sc-eMigcr.ioHOMS {
+    position: relative;
+    display: inline;
+    top: 42px;
+    margin-top: -14px;
+    z-index: 999;
+}
+.sc-cMhqgX.lgIQGd {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.sc-hZSUBg.sc-hhaNoI.ifqUjI.search-div-mini {
+    background: #e51e25;
+}
+.search-div-mini .sc-fHlXLc.hYijQi {
+    background: unset !important;
+}
+.sc-iKiVwC.jhSAbk {
+    border: none;
+}
+.guXMYy:focus {
+    outline: 0;
+    box-shadow: 0 0 15px 5px #E51E25 !important;
+    border: 1px solid #E51E25 !important;
+}
+.headinggraphic{
+background-color: #E51E25 !important;
+}
+.NeepHelpContactNumber a {
+    color: #fff;
+}
+.NeepHelpContactNumber {
+    background: #E51E25 !important;
+}
+.LHNInviteMessage span {
+    color: #e51e25 !important;
+}
+
+.tyrePanelRow .tyreName {
+    background: #e51e25 !important;
+}
+.searchRow #sizeSearchButton {
+    background: #e51e25;
+    margin-left: 5px;
+}
+.searchRow #vehicleSearchButton {
+    background: #e51e25;
+    margin-left: 5px;
+}
+.searchRow #brandSearchButton {
+    background: #e51e25;
+    margin-left: 5px;
+}
+.tyrePanelRow .tyreProduct a {
+    background: #e51e25 !important;
+}
+.feedback.vehicle_model {
+    margin-top: 20px !important;
+}
+.hveDxG:first-of-type {
+    background: #e51e25 !important;
+}
+.hveDxG{
+background-color:#e51e25 !important;
+}
+
+.sc-hORach.eFQsis .sc-ePZHVD.dWVxrl {
+    background: #e51e25 !important;
+    color: #fff;
+}
+.sc-bdVaJa.tyres_details.bSDKaV {
+    background: #e51e25 !important;
+    border: 1px solid #e51e25 !important;
+}
+.hRAvaP {
+    background-color: #e51e25 !important;
+color:#fff;
+}
+.sc-ewMkZo.fgJtHp {
+    background-color: #e51e25 !important;
+}
+.sc-kBMPsl.jaxmpO {
+    background: #717171 !important;
+}
+
+.sc-eMgOci.ckcheB .sc-jgwFWF.iBGpgZ {
+    background: #717171;
+    padding: 11px;
+    color: #fff;
+}
+.sc-LAuEU.kaFPnL {
+    margin-top: 5px !important;
+}
+.sc-kRCAcj.flQxdy {
+    color: #fff;
+}
+.sc-bkCOcH.gOhCUo .sc-ifAKCX.sc-bCMXmc.gJvGKO {
+    color: #e51e25 !important;
+}
+.sc-jiTwWT.hSoRPR h5 {
+    margin-left: 15px;
+    color: #e51e25 !important;
+}
+.sc-jiTwWT.hSoRPR span {
+    color: #e51e25 !important;
+}
+.newsletter-section {
+    display: flex;
+}
+.sc-jnlKLf.sc-lcpuFF.iwsXcr {
+    width: 20px !important;
+}
+
+/*media quries*/
+
+@media(min-width:768px){
+    .sc-eMigcr.ioHOMS {
+    display: none;
+}
+}
