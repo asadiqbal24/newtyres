@@ -19,7 +19,8 @@
                                             <tr>
                                               <td>{{$i++}}</td>
                                               <td>{{$a->description}}</td>
-                                              <td><a href="{{route('admin-adivsory-edit',['id'=>$a->id])}}" class="btn btn-success">Edit</a></td>
+                                              <td><a href="{{route('admin-adivsory-edit',['id'=>$a->id])}}" class="btn btn-success">Edit</a>
+                                                <a href="{{route('admin-adivsory-delete',['id'=>$a->id])}}" class="btn btn-danger">Delete</a></td>
                                             </tr>
                                             @endforeach()
 

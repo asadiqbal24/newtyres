@@ -179,6 +179,7 @@
                 <td>
                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#mobile{{ $e->id }}" data-backdrop="false"><i class="material-icons">phone</i></a>
                   <a href="{{route('admin.estimates.view',['id'=>$e->id])}}" class="btn btn-primary"> Open </a>
+                  <a href="{{route('admin-estimate-delete',['id'=>$e->id])}}" class="btn btn-danger">Delete</a>
                   
                     <div class="modal fade" id="mobile{{ $e->id }}" tabindex="-1" role="dialog">
                         <div class="modal-dialog" role="document">

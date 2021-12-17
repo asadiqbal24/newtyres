@@ -378,4 +378,12 @@ class CustomerDetailController extends Controller
        return redirect()->route('admin.account.manager');
     }
 
+
+    public function admin_customer_elete($id)
+    {
+        $delete=Customer::where('id',$id)->delete();
+    alert()->success("Data Deleted Successfully");
+    return redirect()->back();
+    }
+
 }

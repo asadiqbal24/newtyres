@@ -148,6 +148,7 @@ padding-right:5px !important;
                     <td>
                       <a href="#" data-toggle="modal" data-target="#stock_info_modal" data-backdrop="false" class="btn btn-info">Info</a>
                       <a href="{{route('admin.edit.stock',['id'=>$s->id])}}" class="btn btn-primary">Edit</a>
+                      <a href="{{route('admin-stock-delete',['id'=>$s->id])}}" class="btn btn-danger">Delete</a>
                     </td>
                   </tr>
                   @endforeach

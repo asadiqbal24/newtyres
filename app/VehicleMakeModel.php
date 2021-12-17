@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class VehicleMakeModel extends Model
 {
     //
-    protected $table = 'vehicles_model';
+    protected $table = 'vehicles_models';
 }

@@ -304,4 +304,12 @@ class InvoicesController extends Controller
 
       }
 
+
+      public function admin_invoice_delete($id)
+      {
+        $delete=Invoice::where('id',$id)->delete();
+    alert()->success("Data Deleted Successfully");
+    return redirect()->back();
+      }
+
 }

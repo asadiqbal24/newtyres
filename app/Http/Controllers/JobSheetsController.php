@@ -278,4 +278,12 @@ class JobSheetsController extends Controller
     
     }
 
+
+    public function admin_jobsheet_delete($id)
+    {
+       $delete=JobSheets::where('id',$id)->delete();
+    alert()->success("Data Deleted Successfully");
+    return redirect()->back();
+    }
+
 }

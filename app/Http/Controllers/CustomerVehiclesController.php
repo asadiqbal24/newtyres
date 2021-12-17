@@ -17,4 +17,13 @@ class CustomerVehiclesController extends Controller
 
     }
 
+
+    public function cutomer_vehile_delete($id)
+    {
+       //dd($id);
+       $delete=VehiclesMake::where('id',$id)->delete();
+        alert()->success("Data Deleted Successfully");
+         return redirect()->back();
+    }
+
 }

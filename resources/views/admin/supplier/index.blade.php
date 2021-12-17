@@ -123,7 +123,7 @@ padding-right:5px !important;
                 <th>Acc Number</th>
                 <th>Company</th>
                 <th>Address</th>
-                <th></th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -136,10 +136,12 @@ padding-right:5px !important;
                     {{$adr}},
                     @endforeach
                 </td>
+                
                 <td>
                   
                 <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#mobile{{ $c->id }}" data-backdrop="false"><i class="material-icons">phone</i></a>
                     <a href="{{route('admin.edit.supplier',['id'=>$c->id])}}" class="btn btn-info">Open</a>
+                    <a href="{{route('admin-supplier-delete',['id'=>$c->id])}}" class="btn btn-danger">Delete</a>
                             <div class="modal fade" id="mobile{{ $c->id }}" tabindex="-1" role="dialog">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">

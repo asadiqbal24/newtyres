@@ -157,6 +157,7 @@ padding-right:5px !important;
 </svg>
 </a> | 
                     <a href="{{ route('admin.edit.appointment', ['id' => $c->id ]) }}" >open</a>
+                    <a href="{{route('admin-customer-delete',['id'=>$c->id])}}" class="btn btn-danger">Delete</a>
                        <div class="modal fade" id="mobile{{ $c->id }}" tabindex="-1" role="dialog">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">

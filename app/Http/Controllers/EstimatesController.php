@@ -352,6 +352,7 @@ class EstimatesController extends Controller
 
     public function admin_add_labour_rates()
     {
+
         $page_title = "Add Labour Rates";
         return view('admin.estimate.add_labour_rate',compact('page_title'));
     }
@@ -359,6 +360,7 @@ class EstimatesController extends Controller
 
     public function admin_labour_rate_save(Request $request)
     {
+        dd($request);
 
         $new = new EstimateData();
         $new->name=$request->name;
@@ -583,6 +585,47 @@ public function estimate_global_notes_save(Request $request)
    alert()->success("Data Inserted SuccessFully");
    return redirect()->back();
 }
+
+
+
+
+
+
+public function admin_estimate_delete($id)
+{
+   $delete=Estimates::where('id',$id)->delete();
+    alert()->success("Data Deleted Successfully");
+    return redirect()->back(); 
+}
+
+
+
+public function admin_labour_delete($id)
+{
+  $delete=EstimateData::where('id',$id)->delete();
+    alert()->success("Data Deleted Successfully");
+    return redirect()->back();    
+}
+
+
+
+
+
+public function admin_part_delete($id)
+{
+   $delete=EstimatePart::where('id',$id)->delete();
+    alert()->success("Data Deleted Successfully");
+    return redirect()->back();    
+}
+
+
+public function admin_adivsory_delete($id)
+{
+  $delete=EstimateAdvisory::where('id',$id)->delete();
+    alert()->success("Data Deleted Successfully");
+    return redirect()->back();   
+}
+
 
 
 

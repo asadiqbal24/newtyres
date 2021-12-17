@@ -3213,6 +3213,108 @@ Route::post('global-notes-save',[
 
 
 
+Route::get('admin-estimate-delete/{id}',[
+'uses' => 'EstimatesController@admin_estimate_delete',
+'as' => 'admin-estimate-delete',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+Route::get('admin-jobsheet-delete/{id}',[
+'uses' => 'JobSheetsController@admin_jobsheet_delete',
+'as' => 'admin-jobsheet-delete',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+
+Route::get('admin-invoice-delete/{id}',[
+'uses' => 'InvoicesController@admin_invoice_delete',
+'as' => 'admin-invoice-delete',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+
+
+Route::get('admin-customer-delete/{id}',[
+'uses' => 'CustomerDetailController@admin_customer_elete',
+'as' => 'admin-customer-delete',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+
+
+Route::get('cutomer-vehile-delete/{id}',[
+'uses' => 'CustomerVehiclesController@cutomer_vehile_delete',
+'as' => 'cutomer-vehile-delete',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+Route::get('admin-supplier-delete/{id}',[
+'uses' => 'SuppliersController@admin_supplier_delete',
+'as' => 'admin-supplier-delete',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+Route::get('admin-stock-delete/{id}',[
+'uses' => 'StockController@admin_stock_delete',
+'as' => 'admin-stock-delete',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+Route::get('admin-labour-delete/{id}',[
+'uses' => 'EstimatesController@admin_labour_delete',
+'as' => 'admin-labour-delete',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+Route::get('admin-part-delete/{id}',[
+'uses' => 'EstimatesController@admin_part_delete',
+'as' => 'admin-part-delete',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+
+Route::get('admin-adivsory-delete/{id}',[
+'uses' => 'EstimatesController@admin_adivsory_delete',
+'as' => 'admin-adivsory-delete',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+
+
+
+
+
+
 
 
 

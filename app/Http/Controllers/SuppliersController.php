@@ -127,6 +127,14 @@ class SuppliersController extends Controller
             $page_title = 'Admin Supplier';
             return view('admin.supplier.add',compact('page_title'));
         }
+
+
+        public function admin_supplier_delete($id)
+        {
+        $delete=Suppliers::where('id',$id)->delete();
+        alert()->success("Data Deleted Successfully");
+         return redirect()->back();
+        }
     
 
     }

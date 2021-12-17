@@ -31,7 +31,8 @@
                                                 <td>{{$l->unit_price}}</td>
                                                 <td>{{$l->vat}}</td>
                                                 <td>{{$l->subtotal}}</td>
-                                                <td><a href="{{route('admin-labour-edit',['id'=>$l->id])}}" class="btn btn-success">Open</a></td>
+                                                <td><a href="{{route('admin-labour-edit',['id'=>$l->id])}}" class="btn btn-success">Open</a>
+                                                  <a href="{{route('admin-labour-delete',['id'=>$l->id])}}" class="btn btn-danger">Delete</a></td>
                                               </tr>
                                               @endforeach()
                                             </tbody>

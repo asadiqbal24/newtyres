@@ -35,7 +35,8 @@
                                                     <td>{{$p->unit_price}}</td>
                                                     <td>{{$p->vat}}</td>
                                                     <td>{{$p->total}}</td>
-                                                    <td><a href="{{route('admin-part-edit',['id'=>$p->id])}}" class="btn btn-success">Edit</a></td>
+                                                    <td><a href="{{route('admin-part-edit',['id'=>$p->id])}}" class="btn btn-success">Edit</a>
+                                                      <a href="{{route('admin-part-delete',['id'=>$p->id])}}" class="btn btn-danger">Delete</a></td>
                                               </tr>
                                               @endforeach()
 

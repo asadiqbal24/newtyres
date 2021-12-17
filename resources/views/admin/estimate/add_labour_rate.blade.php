@@ -1,6 +1,9 @@
 @extends('partials.default')
 @section('content')
 
+
+
+
 <section class="content home">
     <div class="container-fluid">
 <div class="block-header">
@@ -13,8 +16,8 @@
                 </div>
             </div>
         </div>
-       <form method="post" action="{{route('admin-labour-rate-save')}}" id="estmate_form">
-                           {{csrf_field()}}
+       <form method="Post" action="{{route('admin-labour-rate-save')}}">
+        {{csrf_field()}}
         <div class="row clearfix">
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-success save-form">Save</button>
@@ -98,58 +101,15 @@
                                 </div>
                                 
                         </div>
-                    </form>
+                   
                 </div>
+          
+
             </div>
+
+             </form>
     </div>
 </section>
-
-@endsection()
-@section('jsOutside')
-
-<script type="text/javascript">
-  
-  $(document).ready(function(){
-/*    $('#qty').keyup(calculate);
-    $('#price').keyup(calculate);*/
-});
-function calculate(e)
-{
-    // $('#total').val($('#qty').val() * $('#price').val());
-}
-
-
-function calculate_total(th){
-  
-  var row = $(th).data('row');
-  value = $('#qty'+row).val() * $('#price'+row).val();
-  $('#total'+row).val($('#qty'+row).val() * $('#price'+row).val());
-
-
-  total = 0;
-
-  $('.total').each(function(){
-
-    total = total + Number($(this).val());
-  });
-
-  $('#subtotal').val(Number(total));
-
-  taxes = $('#taxes').val();
-  $('#grand_total').val(Number(total) + Number(taxes));
-}
-
-$('#taxes').keyup(function(){
-
-  val = Number($(this).val());
-  subtotal = Number($('#subtotal').val());
-  total = subtotal * (val / 100);
-  $('#grand_total').val(Number(subtotal) + Number(total));
-})
-
-
-
-</script>
 
 @endsection()
 

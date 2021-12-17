@@ -525,6 +525,14 @@ public function admin_calender_grid_system_save(Request $request)
 }
 
 
+public function admin_stock_delete($id)
+{
+  $delete=Stock::where('id',$id)->delete();
+    alert()->success("Data Deleted Successfully");
+    return redirect()->back();   
+}
+
+
 
 
 }

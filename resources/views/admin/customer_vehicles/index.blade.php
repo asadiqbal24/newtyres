@@ -94,7 +94,7 @@ padding-right:5px !important;
                 <th>Next Reminder</th>
                 <th>Tot Docs</th>
                 <th>Last Inv.</th>
-                <th></th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -108,7 +108,7 @@ padding-right:5px !important;
                     <td>Next Reminder</td>
                     <td>Tot Docs</td>
                     <td>Last Inv.</td>
-                    <td></td>
+                    <td><a href="{{route('cutomer-vehile-delete',['id'=>$d->id])}}" class="btn btn-danger">Delete</a></td>
 
                   </tr>
 
