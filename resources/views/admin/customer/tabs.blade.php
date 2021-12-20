@@ -30,7 +30,9 @@
                                     </div>
 
                                     <div role="tabpanel" class="tab-pane animated flipInX" id="alt_delivery">
+
                                         @include('admin.customer.alt_delivery')
+                                        
                                     </div>
                                     <div role="tabpanel" class="tab-pane animated flipInX" id="comms_activity">
                                         @include('admin.customer.comms_activity')

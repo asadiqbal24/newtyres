@@ -370,7 +370,7 @@
                         <div class="row">
                             <div class="col-md-2 input-group">
                                
-                            <input type="checkbox" id="basic_checkbox_2" class="filled-in" name="is_email"  />
+                            <input type="checkbox" id="basic_checkbox_2" class="filled-in" name="is_email"  @if($edit->is_email) checked @endif  />
                             <label for="basic_checkbox_2">Email</label>
 
                                 <span class="input-group-addon"> <i></i> </span>

@@ -258,7 +258,10 @@ class InvoicesController extends Controller
       {
           $page_title = 'Edit Invoice';
           $edit = Invoice::where('id', $id)->first();
-          return view('admin.admin_invoice_view_detail',compact('edit','page_title'));
+          $labour=EstimateData::get();
+        $part=EstimatePart::get();
+        $adivsory=EstimateAdvisory::get();
+          return view('admin.admin_invoice_view_detail',compact('edit','page_title','labour','part','adivsory'));
       }
 
 

@@ -256,13 +256,13 @@ class JobSheetsController extends Controller
    public function jobsheet_view($id)
     {
        $jobSheet = JobSheets::find($id);
+       //dd($jobSheet);
          $labour=EstimateData::get();
         $part=EstimatePart::get();
         $adivsory=EstimateAdvisory::get();
+        $vehicles=Vehicles::get();
         $page_title = 'Add New Estimate';
-
-
-        return view('admin.jobs.add_job_sheet',compact('page_title','jobSheet','labour','part','adivsory'));
+        return view('admin.jobs.add_job_sheet',compact('page_title','jobSheet','labour','part','adivsory','vehicles'));
     }
 
     public function get_jobsheet_details(Request $request){

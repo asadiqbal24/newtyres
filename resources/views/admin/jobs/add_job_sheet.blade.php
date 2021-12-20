@@ -77,7 +77,7 @@
 
                                             <datalist id="makeList">
                                                 @foreach($vehicles as $vh)
-                                                    <option value="{{$vh->name}}">
+                                                    <option value="{{$vh->id}}">{{$vh->name}}</option>
                                                 @endforeach        
 
                                             </datalist>
@@ -113,9 +113,12 @@
                                 
                                 <div class="col-md-3">
                                     
-                                    <div class="btn-group" role="group">
+                                    <div  role="group">
                                         <button type="button" class="btn btn-default btn-sm waves-effect"><i class="zmdi zmdi-search"></i></button>
-                                        <button type="button" class="btn btn-default btn-sm waves-effect ml-1">VRM Lookup</button>
+                                        <div>
+                                         <button type="button" class="btn btn-default btn-sm waves-effect ml-1">VRM Lookup</button>   
+                                        </div>
+                                        
                                         
                                     </div>
                                 </div>

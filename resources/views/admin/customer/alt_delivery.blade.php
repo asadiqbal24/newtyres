@@ -1,14 +1,31 @@
+
+
 <div class="row">
   <div class="col-md-5">
     <table class="table table-bordered">
       <thead>
         <tr>
+          <th>#</th>
           <th>Title</th>
           <th>First Name</th>
           <th>Surname</th>
-          <th><input type="checkbox" name=""></th>
+          <th><input type="checkbox" name="">Action</th>
         </tr>
       </thead>
+      <tbody>
+        @php $i=1
+        @endphp
+       
+        @foreach($delivery as $d)
+        <tr>
+          <td>{{$i++}}</td>
+          <td>{{$d->title}}</td>
+          <td>{{$d->name}}</td>
+           <td>{{$d->surname}}</td>
+           <td><a href="" class="btn btn-danger">Delete</a></td>
+        </tr>
+        @endforeach()
+      </tbody>
     </table>
   </div>
   <div class="col-md-7" style="border-left: 1px solid #d0d0d0">
@@ -30,28 +47,37 @@
         </div>
       </div>
     </div>
+
     <div class="row" id="div_2" style="display: none">
+
+      <form method="post" action="{{route('admin-atdelivery-save')}}">
+         {{csrf_field()}}
       <div class="col-md-12">
         
         <div class="row">
           <div class="col-md-4 input-group">
             <div class="form-line">
               <label>Name</label>
-              <input type="text" name="name[]" required class="form-control">
+              <select class="form-control show-tick" required name="title">
+                <option>Choose</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+              </select>
+            <!--   <input type="text" name="name[]" required class="form-control"> -->
             </div>
             <span class="input-group-addon"> <i></i> </span>
           </div>
-          <div class="col-md-4 input-group">
+          <div class="col-md-4 input-group" style="margin-top: 35px;">
             <div class="form-line">
               <label></label>
-              <input type="text" name="name[]" required class="form-control">
+              <input type="text" name="name" required class="form-control">
             </div>
             <span class="input-group-addon"> <i></i> </span>
           </div>
-          <div class="col-md-4 input-group">
+          <div class="col-md-4 input-group" style="margin-top: 35px;">
             <div class="form-line">
               <label></label>
-              <input type="text" name="name[]" required class="form-control">
+              <input type="text" name="surname" required class="form-control">
             </div>
             <span class="input-group-addon"> <i></i> </span>
           </div>
@@ -136,12 +162,14 @@
 
         <div class="row">
           <div class="col-md-6 input-group">          
-          <button class="btn btn-default" type="submit">Add New</button>
+          <button class="btn btn-default" type="submit">Save</button>
         </div>
         </div>
 
         
       </div>
+
+      </form>
     </div>
   </div>
 </div>

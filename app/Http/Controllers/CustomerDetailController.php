@@ -10,14 +10,16 @@ use Illuminate\Support\Facades\Input;
 use Alert;
 use Auth;
 use App\Models\Payment;
+use App\Models\AtDelivery;
 class CustomerDetailController extends Controller
 {
 
     public function add_new_customer()
     {
         $page_title = 'Add New Customer';
-       
-        return view('admin.add_new_customer',compact('page_title'));
+        $delivery=AtDelivery::get();
+        
+        return view('admin.add_new_customer',compact('page_title','delivery'));
     }
 
     public function admin_edit_customer($id)
@@ -384,6 +386,36 @@ class CustomerDetailController extends Controller
         $delete=Customer::where('id',$id)->delete();
     alert()->success("Data Deleted Successfully");
     return redirect()->back();
+    }
+
+    public function admin_atdelivery_save(Request $request)
+    {
+        //dd($request);
+        $new= new AtDelivery();
+        $new->title=$request->title;
+        $new->name=$request->name;
+        $new->surname=$request->surname;
+        $new->house_no=$request->house_no;
+        $new->post_code=$request->postcode;
+        $new->road=$request->road;
+        $new->town=$request->town;
+        $new->country=$request->county;
+        $new->telephone=$request->telephone;
+        $new->mobile=$request->mobile;
+        $new->locality=$request->locality;
+        $new->save();
+        alert()->success('Data Inserted SuccessFully');
+        return redirect()->back();
+            
+
+          
+    }
+
+    public function admin_atdelivery_delete($id)
+    {
+        $delete=AtDelivery::where('id',$id)->delete();
+        alert()->success("Data Deleted Successfully");
+        return redirect()->back();
     }
 
 }

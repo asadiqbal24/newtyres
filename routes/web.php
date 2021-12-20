@@ -3309,6 +3309,25 @@ Route::get('admin-adivsory-delete/{id}',[
 
 
 
+Route::post('admin-atdelivery-save',[
+'uses' => 'CustomerDetailController@admin_atdelivery_save',
+'as' => 'admin-atdelivery-save',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+
+Route::get('admin-atdelivery-delete/{id}',[
+'uses' => 'CustomerDetailController@admin_atdelivery_delete',
+'as' => 'admin-atdelivery-delete',
+'middleware' => 'can:admin'
+]);
+
+
+
+
 
 
 
