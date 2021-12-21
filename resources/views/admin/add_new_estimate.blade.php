@@ -69,17 +69,13 @@
                                 </div>
                             </div>
                         </div>
-                        @if(isset($estimate->model))
-                            @php $model = unserialize($estimate->model); @endphp
-                        @else
-                            @php $model = [] @endphp                            
-                        @endif    
+                          
                         <div class="row">
                             <div class="col-md-3 input-group">
                                 <div class="form-line">
                                     <label>Make</label>
-                                    <!-- <input type="text" name="model[]" required value="{{isset($model[0])?$model[0]:''}}" class="form-control"> -->
-                                    <select class="form-control show-tick get_make" name="model[]">
+                                   
+                                    <select class="form-control show-tick get_make" name="model">
                                         <option value="{{NULL}}">Choose</option>
                                         @foreach($vehicles as $v)
                                             <option value="{{$v->id}}">{{$v->name}}</option>
@@ -91,9 +87,9 @@
                             <div class="col-md-3 input-group">
                                 <div class="form-line">
                                     <label>Model</label>
- <!--                                    <input type="text" name="model[]" required value="{{isset($model[1])?$model[1]:''}}" class="form-control"> -->
+ 
 
-                                    <select id="models_list" class="form-control show-tick" name="model[]">
+                                    <select id="models_list" class="form-control show-tick" name="model">
 
                                     </select>
 
@@ -237,7 +233,7 @@
                         </div>
 
                          @if(isset($estimate->name))
-                            @php $name = unserialize($estimate->model); @endphp
+                            @php $name = unserialize($estimate->name); @endphp
                          @else
                             @php $name = [] @endphp                            
                          @endif 

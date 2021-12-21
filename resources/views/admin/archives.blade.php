@@ -28,15 +28,18 @@
                         <button class="btn btn-info btn-xs"><i class="zmdi zmdi-search"></i></button>
                         <button class="btn btn-info btn-xs"><i class="zmdi zmdi-close"></i></button>
                     </div>
-                    <div class="col-md-8">
-                        <a href="#" class="btn btn-success btn-xs">All</a>
-                        <a href="#" class="btn btn-success btn-xs">Invoices</a>
-                        <a href="#" class="btn btn-success btn-xs">Job Sheets</a>
-                        <a href="#" class="btn btn-success btn-xs">Estimates</a>
-                        <a href="#" class="btn btn-success btn-xs">Credit Notes</a>
-                        <a href="#" class="btn btn-success btn-xs">Outstanding</a>
-                        <a href="#" class="btn btn-success btn-xs">Print</a>
+                    
+                    <div class="col-md-8" id="buttons">
+                        <a id="all" data-target=".all" class="btn btn-success btn-xs Smallbutton">All</a>
+                        <a id="invoice" data-target=".invoice" class="btn btn-success btn-xs Smallbutton">Invoices</a>
+                        <a  id="jobsheet" data-target=".jobsheet" class="btn btn-success btn-xs Smallbutton">Job Sheets</a>
+                        <a  id="jobsheet" data-target=".estimate" class="btn btn-success btn-xs Smallbutton">Estimates</a>
+                        <a  id="creditnote" data-target=".creditnote" class="btn btn-success btn-xs Smallbutton">Credit Notes</a>
+                        <a id="outstanding" data-target=".outstanding" class="btn btn-success btn-xs Smallbutton">Outstanding</a>
+                        <a href="#" class="btn btn-success btn-xs Smallbutton">Print</a> 
                     </div>
+                
+
                 </div>
             </div>
         </div>
@@ -114,7 +117,81 @@
 
                 </div>
         </div>
-        <div class="card">
+
+<div class="card all target" >
+            <div class="card-body">
+                <div class="row">
+                    <table class="table table-bordered">
+                        
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                               <th>Doc No</th>
+                                <th>Date</th>
+                                <th>Issue Date</th>
+                                <th>Registration</th>
+                                <th>Make & Model</th>
+                                <th>Customer</th>
+                            
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @php $a=1
+                            @endphp
+                            @foreach($invoice as $i)
+                              @php $name = unserialize($i->name); @endphp
+                            <tr>
+                                <td>{{$a++}}</td>
+                                <td></td>
+                                <td>{{$i->created_at->format('Y-m-d')}}</td>
+                                <td>{{$i->date_reg}}</td>
+                                <td>{{$i->registration_no}}</td>
+                                <td>{{$i->model}}</td>
+                                <td>@foreach($name as $n) {{$n}} @endforeach</td>
+
+                                <td><a href="{{route('admin.invoice.view-detail',['id'=>$i->id])}}" class="btn btn-primary">Open</a></td>
+                                
+                            </tr>
+                            @endforeach()
+                             @foreach($jobsheet as $j)
+                                 @php $modal = unserialize($j->model); @endphp
+                                    @php $name = unserialize($j->name); @endphp
+                             <tr>
+                                 <td>{{$a++}}</td>
+                                 <td></td>
+                                 <td>{{$j->date_reg}}</td>
+                                 <td>{{$j->created_at->format('Y-m-d')}}</td>
+                                 <td>{{$j->registration_no}}</td>
+                                 <td>@foreach($modal as $m) {{$m}} @endforeach</td>
+                                 <td>@foreach($name as $n) {{$n}} @endforeach</td>
+                                 
+                                 <td><a href="{{route('admin.jobsheet.view',['id'=>$j->id])}}" class="btn btn-primary">Open</a></td>
+                             </tr>
+                             @endforeach()
+                             @foreach($estimate as $e)
+                              @php $name = unserialize($e->name); @endphp
+                            <tr>
+                                <td>{{$a++}}</td>
+                                <td></td>
+                                <td>{{$e->date_reg}}</td>
+                                <td>{{$e->created_at->format('Y-m-d')}}</td>
+                                <td>{{$e->registration_no}}</td>
+                                <td>{{isset($e->modal)?$e->modal->name:''}}</td>
+                                 <td>@foreach($name as $n) {{$n}} @endforeach</td>
+                                 
+                                 <td><a href="{{route('admin.estimates.view',['id'=>$e->id])}}" class="btn btn-primary">Open</a></td>
+                            </tr>
+                            @endforeach()
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card invoice target" style="display:none;" >
             <div class="card-body">
                 <div class="row">
                     <table class="table table-bordered">
@@ -124,23 +201,184 @@
                                 <th>#</th>
                                 <th>Doc No</th>
                                 <th>Date</th>
+                                <th>Issue Date</th>
                                 <th>Registration</th>
+                                <th>Make & Model</th>
+                                <th>Customer</th>
+                            
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                              $a=1;
+                             ?>
+                              
+                            @foreach($invoice as $i)
+                            @php $name = unserialize($i->name); @endphp
+                            <tr>
+                                <td>{{$a++}}</td>
+                                <td></td>
+                                <td>{{$i->created_at->format('Y-m-d')}}</td>
+                                <td>{{$i->date_reg}}</td>
+                                <td>{{$i->registration_no}}</td>
+                                <td>{{$i->model}}</td>
+                                <td>@foreach($name as $n) {{$n}} @endforeach</td>
+                                <td><a href="{{route('admin.invoice.view-detail',['id'=>$i->id])}}" class="btn btn-primary">Open</a></td>
+                            </tr>
+                            @endforeach()
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card jobsheet target" style="display:none;">
+            <div class="card-body">
+                <div class="row">
+                    <table class="table table-bordered">
+                        
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Doc No</th>
+                                <th>Date</th>
+                                <th>Issue Date</th>
+                                 <th>Registration</th>
                                 <th>Make & Model</th>
                                 <th>Customer</th>
                                 <th>Total</th>
                                 <th>Status</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                           @php
+                              $i=1;
+                             @endphp
+                             @foreach($jobsheet as $j)
+                                 @php $modal = unserialize($j->model); @endphp
+                                    @php $name = unserialize($j->name); @endphp
+                             <tr>
+                                 <td>{{$i++}}</td>
+                                 <td></td>
+                                 <td>{{$j->date_reg}}</td>
+                                 <td>{{$j->created_at->format('Y-m-d')}}</td>
+                                 <td>{{$j->registration_no}}</td>
+                                 <td>@foreach($modal as $m) {{$m}} @endforeach</td>
+                                 <td>@foreach($name as $n) {{$n}} @endforeach</td>
+                                 <td>0</td>
+                                 <td><a href="{{route('admin.jobsheet.view',['id'=>$j->id])}}" class="btn btn-primary">Open</a></td>
+                             </tr>
+                             @endforeach()
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card estimate target" style="display:none;">
+            <div class="card-body">
+                <div class="row">
+                    <table class="table table-bordered">
+                        
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Doc No</th>
+                                <th>Date</th>
+                                <th>issue Date</th>
+                                 <th>Registration</th>
+                                <th>Make & Model</th>
+                                <th>Customer</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @php $i=1;
+                            @endphp
+                            @foreach($estimate as $e)
+                              @php $name = unserialize($e->name); @endphp
+                            <tr>
+                                <td>{{$i++}}</td>
+                                <td></td>
+                                <td>{{$e->date_reg}}</td>
+                                <td>{{$e->created_at->format('Y-m-d')}}</td>
+                                <td>{{$e->registration_no}}</td>
+                                <td>{{isset($e->modal)?$e->modal->name:''}}</td>
+                                 <td>@foreach($name as $n) {{$n}} @endforeach</td>
+                                 <td>0</td>
+                                 <td><a href="{{route('admin.estimates.view',['id'=>$e->id])}}" class="btn btn-primary">Open</a></td>
+                            </tr>
+                            @endforeach()
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card creditnote target" style="display:none;">
+            <div class="card-body">
+                <div class="row">
+                    <table class="table table-bordered">
+                        
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Doc No</th>
+                                <th>Date</th>
+                                 <th>Registration</th>
+                                <th>Make & Model</th>
+                                <th>Customer</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                                
                             </tr>
                         </thead>
                     </table>
                 </div>
             </div>
         </div>
+        <div class="card outstanding target" style="display:none;">
+            <div class="card-body">
+                <div class="row">
+                    <table class="table table-bordered">
+                        
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Doc No</th>
+                                <th>Date</th>
+                                 <th>Registration</th>
+                                <th>Make & Model</th>
+                                <th>Customer</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                                
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>    
+        
+        
         
         
     </div>
 </section>
 @endsection()
 @section('jsOutside')
-
+<script type="text/javascript">
+$(document).ready(function () {
+    var $targets = $('.target');
+    $('#buttons .Smallbutton').click(function () {
+        var $target = $($(this).data('target')).slideToggle();
+        $targets.not($target).hide()
+    });
+});
+</script>
 
 @endsection()

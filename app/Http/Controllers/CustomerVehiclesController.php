@@ -13,6 +13,7 @@ class CustomerVehiclesController extends Controller
 
         $page_title = 'Vehicles';
         $data = VehiclesMake::orderBy('id','desc')->paginate(25);
+    
         return view('admin.customer_vehicles.index',compact('request','page_title','data'));
 
     }

@@ -22,7 +22,7 @@
           <td>{{$d->title}}</td>
           <td>{{$d->name}}</td>
            <td>{{$d->surname}}</td>
-           <td><a href="" class="btn btn-danger">Delete</a></td>
+           <td><a href="{{route('admin-atdelivery-delete',['id'=>$d->id])}}" class="btn btn-danger">Delete</a></td>
         </tr>
         @endforeach()
       </tbody>

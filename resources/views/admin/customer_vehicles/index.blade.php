@@ -88,6 +88,7 @@ padding-right:5px !important;
             
             <thead>
               <tr>
+                <th>#</th>
                 <th>Registration</th>
                 <th>Make / Model</th>
                 <th>Customer</th>
@@ -98,10 +99,12 @@ padding-right:5px !important;
               </tr>
             </thead>
             <tbody>
+              @php $i=1
+              @endphp
                 @foreach($data as $d)
 
                   <tr>
-                      
+                     <td>{{$i++}}</td> 
                     <td>{{$d->registration_number}}</td>
                     <td>{{$d->make}} / {{$d->model}}</td>
                     <td>Customer</td>

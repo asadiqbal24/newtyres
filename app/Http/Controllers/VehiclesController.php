@@ -10,6 +10,7 @@ use App\Models\VehicleDetails;
 use App\Models\VehiclesMake;
 use App\Models\Customer;
 use App\Models\VehicleDocuments;
+use App\Models\AtDelivery;
 
 
 
@@ -56,8 +57,9 @@ class VehiclesController extends Controller
 	{
         $customers = Customer::all();
         $make = Vehicles::all();
+        $delivery=AtDelivery::get();
 		$page_title = 'Admin::Add Vehicles';
-		return view('admin.vehicles.add_vehicles',compact('page_title', 'customers','request','make'));
+		return view('admin.vehicles.add_vehicles',compact('page_title', 'customers','request','make','delivery'));
 
 	}
 

@@ -132,6 +132,7 @@
             
             <thead>
               <tr>
+                <th>#</th>
                 <th>Doc No</th>
                 <th>Date</th>
                 <th>Registration</th>
@@ -143,14 +144,18 @@
               </tr>
             </thead>
             <tbody>
+              @php $i=1
+              @endphp
               @foreach($estimates as $e)
-              @php $models = unserialize($e->model); @endphp
+                @php $name = unserialize($e->name); @endphp
+             
               <tr>
-                <td>{{$e->id}}</td>
+                <td>{{$i++}}</td>
+                <td></td>
                 <td>{{$e->created_at}}</td>
                 <td>{{$e->registration_no}}</td>
-                <td>@foreach($models as $m) {{$m}} @endforeach</td>
-                <td></td>
+                <td>{{isset($e->modal)?$e->modal->name:''}}</td>
+                <td>@foreach($name as $n) {{$n}} @endforeach</td>
                 <td>{{'0.00'}}</td>
                 <td>
                   

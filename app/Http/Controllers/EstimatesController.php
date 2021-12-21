@@ -59,10 +59,10 @@ class EstimatesController extends Controller
 
         }
 
-        $estimates = $estimates->paginate(25);
-
+        $estimates = $estimates->with('modal')->paginate(25);
+        // dd($estimates);
         $requestData = $request;
-
+          
 
 
         return view('admin.estimates',compact('page_title','estimates','requestData'));
@@ -154,7 +154,7 @@ class EstimatesController extends Controller
             $result = Estimates::where('id', $request->id)->update([
             
                 'registration_no' => $request->registration_no,
-                'model' => serialize($request->model),
+                'model' =>$request->model,
                 'derivative' => $request->derivative,
                 'chassis' => $request->chassis,
                 'engine_cc' => $request->engine_cc,
@@ -198,7 +198,6 @@ class EstimatesController extends Controller
         $validator = Validator::make(
                 [
                       "registration_no" => $request->registration_no,
-                      "model" => $request->model,
                       "derivative" => $request->derivative,
                       "chassis" => $request->chassis,
                       "engine_cc" => $request->engine_cc,
@@ -228,7 +227,7 @@ class EstimatesController extends Controller
                 [
                      
                       "registration_no" => 'required',
-                      "model" => 'required',
+                      
                       "derivative" => 'required',
                       "chassis" => 'required',
                       "engine_cc" => 'required',
@@ -290,7 +289,7 @@ class EstimatesController extends Controller
 
 
                 $new->registration_no = $request->registration_no;
-                $new->model = serialize($request->model);
+                $new->model = $request->model;
                 $new->derivative = $request->derivative;
                 $new->chassis = $request->chassis;
                 $new->engine_cc = $request->engine_cc;
@@ -319,7 +318,7 @@ class EstimatesController extends Controller
 
                 $new->save();
                 
-                Alert::success('Saved');        
+                alert()->success("Data Inserted SuccessFully");       
                 return redirect()->back();     
             }
     
