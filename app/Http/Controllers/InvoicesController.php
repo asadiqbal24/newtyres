@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Input;
 use Alert;
 use Auth;
 use DB;
+use Mail;
 use App\Models\Invoices;
 use App\Models\EstimateData;
 use App\Models\EstimatePart;
