@@ -3327,6 +3327,51 @@ Route::get('admin-atdelivery-delete/{id}',[
 
 
 
+Route::get('admin-mass-mailing',[
+'uses' => 'AdminController@admin_mass_mailing',
+'as' => 'admin-mass-mailing',
+'middleware' => 'can:admin'
+]);
+
+
+
+Route::get('admin-cutomer-delete/{id}',[
+'uses' => 'AdminController@admin_cutomer_delete',
+'as' => 'admin-cutomer-delete',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+Route::get('admin-send-file-to-customer',[
+'uses' => 'AdminController@admin_send_file_to_customer',
+'as' => 'admin-send-file-to-customer',
+'middleware' => 'can:admin'
+]);
+
+
+
+Route::post('admin-file-customer-save',[
+'uses' => 'AdminController@admin_file_customer_save',
+'as' => 'admin-file-customer-save',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

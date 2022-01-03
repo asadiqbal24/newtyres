@@ -23,7 +23,7 @@
                                             <a href="{{route('admin.business.charts')}}" class="btn btn-info dashboard_btn">Business Charts</a>
                                             <a href="{{route('admin.bank.reconcile')}}" class="btn btn-info dashboard_btn">Bank Reconcile</a>
 
-                                            <a href="" class="btn btn-info dashboard_btn">Mass Mailing</a>
+                                            <a href="{{route('admin-mass-mailing')}}" class="btn btn-info dashboard_btn">Mass Mailing</a>
                                             <a href="{{route('admin.accounts.csv')}}" class="btn btn-info dashboard_btn">Account CSV Exports</a>
                                             <a href="{{route('admin.general.csv')}}" class="btn btn-info dashboard_btn">General CSV Exports</a>                                     
                                             <a href="{{route('admin.technicians')}}" class="btn btn-info dashboard_btn">Technicians / Employees</a>

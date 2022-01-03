@@ -93,7 +93,7 @@ class InvoicesController extends Controller
 		}
 
 
-    $labour=EstimateData::get();
+       $labour=EstimateData::get();
 
         $part=EstimatePart::get();
         $adivsory=EstimateAdvisory::get();

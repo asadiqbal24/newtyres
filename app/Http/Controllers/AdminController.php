@@ -11,7 +11,9 @@ use App\Models\UserPreferences;
 use Validator;
 use Illuminate\Support\Facades\Input;
 use DB;
-
+use App\Models\Customer;
+use App\Models\CutomerFile;
+use Mail;
 
 class AdminController extends Controller
 {
@@ -322,6 +324,82 @@ class AdminController extends Controller
         $user->save();        
         alert()->success('Saved');
         return redirect()->back();                
+
+  }
+
+
+  public function admin_mass_mailing()
+  {
+    $page_title = 'Mass Mailing';
+    $customer=Customer::paginate(10);
+    //dd($customer);
+    return view('admin.mass_mailing',compact('page_title','customer'));  
+  }
+
+  public function admin_cutomer_delete($id)
+  {
+    $customer=Customer::where('id',$id)->delete();
+    $customer_delete=CustomerDetail::where('id',$id)->delete();
+    alert()->success('Customer Deleted Successfully');
+    return redirect()->back();
+  }
+
+  public function admin_send_file_to_customer()
+  {
+      $page_title = 'File Send To Customer';
+      return view('admin.admin_send_file_to_customer',compact('page_title'));
+  }
+
+
+  public function admin_file_customer_save(Request $request)
+  {
+
+              if ($request->hasFile('file')) 
+                    {
+
+                    $destinationPath = public_path()."/images/images/";
+                    $extension =  $request->file('file')->getClientOriginalExtension();
+                    $filename_original =  $request->file('file')->getClientOriginalName();
+                    $fileName = time();
+                    $fileName .= rand(11111,99999).'.'.$extension; // renaming image
+                    if(!$request->file('file')->move($destinationPath,$filename_original))
+                    {
+                        throw new \Exception("Failed Upload");                    
+                    }
+
+                    $thumbnail = asset("/images/images/")."/".$filename_original;
+
+                    
+
+                }
+
+
+      $new=new CutomerFile();
+      $new->text=$request->text;
+      $new->file=$thumbnail;
+      $new->save();
+      $file=CutomerFile::orderBy('id','Desc')->first();
+      if (!empty($file)) {
+         $emails = Customer::select('id','email')->get();
+                 $array = [];
+                 $allmails = [];
+                foreach($emails as $key =>  $e){
+                     $allmails = array_push($array, $e->email);
+                     $file_attachment=$file->file;
+                    // dd($file_attachment);
+                     Mail::send('admin.emails.new_file',array($allmails),function($mail) use ($e){
+                $mail->to($e->email,'New File are Forward To Customer')->from("systems@better1.com")->subject("New File are Forward To Customer");
+                   // $mail->attach($file_attachment);
+
+                });
+                    
+                }
+
+      }
+      
+      alert()->success("New File are Forward To Customer");
+      return redirect()->back();
+
 
   }
 

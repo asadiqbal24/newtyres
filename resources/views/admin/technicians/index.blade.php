@@ -66,7 +66,7 @@ padding-right:5px !important;
               </table>
 
           </div>
-          <div class="col-md-9" id="add_new_employee" style="display:none">
+          <div class="col-md-9" id="add_new_employee">
             <div class="row">
               <div class="col-md-10 input-group">
                 <div class="form-line">
