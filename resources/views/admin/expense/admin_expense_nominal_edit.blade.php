@@ -5,7 +5,6 @@ padding-left: 5px !important;
 padding-right:5px !important;
 }
 </style>
-<link href="{{asset('public/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css')}}" rel="stylesheet" />
 @section('content')
 <!-- Main Content -->
 <section class="content home">
@@ -20,8 +19,7 @@ padding-right:5px !important;
         </div>
       </div>
     </div>
-    
-    <div class="card">
+<div class="card">
       <div class="card-body">
         
         <div class="row clearfix">
@@ -37,53 +35,25 @@ padding-right:5px !important;
     </div>
     <div class="card">
       <div class="card-body">
-        <div class="row clearfix">
-          
-          <div class="col-md-6">
-            <table class="table table-bordered table-hovered">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Category</th>
-                  <th>Description</th>
-                  <th>Code</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                @php $i=1
-                @endphp
-                @foreach($expense as $e)
-                <tr>
-                  <td>{{$i++}}</td>
-                  <td>{{$e->category}}</td>
-                   <td>{{$e->description}}</td>
-                   <td>{{$e->code}}</td>
-                   <td><a href="{{route('admin-expense-nominal-edit',['id'=>$e->id])}}"  class="btn btn-success">Open</a></td>
-                </tr>
-                @endforeach()
-              </tbody>
-            </table>
-            {{$expense->links()}}
-          </div>
-          <div class="col-md-6">
+       <div class="col-md-12">
             
-          <form method="post" action="{{route('expense-nomial-save')}}" id="form">
+          <form method="post" action="{{route('expense-nomial-update')}}" id="form">
             {{csrf_field()}}
+            <input type="hidden" name="id" class="form-control" value="{{$edit->id}}">
             <div class="row">
               <div class="col-md-6 input-group">
                 <div class="form-line">
                   <label>Category</label>
                   <select class="form-control show-tick" name="main_category">
                     <option value="{{NUll}}">Choose</option>
-                    <option value="General">General</option>
+                    <option value="General"<?php if($edit->category=='General')echo"selected='selected'";?>>General</option>
                   </select>
                 </div>
               </div>
               <div class="col-md-6 input-group">
                 <div class="form-line">
                   <label>Description</label>
-                  <input type="text" name="description" class="form-control">
+                  <input type="text" name="description" value="{{$edit->description}}" class="form-control">
                 </div>
                 <span class="input-group-addon"> <i></i> </span>
               </div>
@@ -91,7 +61,7 @@ padding-right:5px !important;
               <div class="col-md-6 input-group">
                 <div class="form-line">
                   <label>Code</label>
-                  <input type="text" name="code" class="form-control">
+                  <input type="text" value="{{$edit->code}}" name="code" class="form-control">
                 </div>
                 <span class="input-group-addon"> <i></i> </span>
               </div>
@@ -103,7 +73,7 @@ padding-right:5px !important;
 
                 
                   <div class="demo-checkbox">
-                  <input type="checkbox" id="md_checkbox_active" name="active"  class="chk-col-red" checked />
+                  <input type="checkbox" id="md_checkbox_active" name="active"  class="chk-col-red" @if($edit->active) checked @endif />
                   <label for="md_checkbox_active">Active</label>
                 </div>
               
@@ -112,22 +82,16 @@ padding-right:5px !important;
               </div>
             </div>
             
-          </div>
+          </div> 
           </form>
-        </div>
       </div>
       
     </div>
     
+          
   </div>
-  
-  
-</div>
 </section>
-@endsection()
-@section('jsOutside')
-<script src="{{asset('public/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js')}}"></script>
-<script src="{{asset('assets/js/pages/forms/advanced-form-elements.js')}}"></script>
+
 
 <script language="javascript" type="text/javascript">
     function submitDetailsForm() {

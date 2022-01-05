@@ -3361,6 +3361,57 @@ Route::post('admin-file-customer-save',[
 
 
 
+Route::post('sale-nomial-save',[
+'uses' => 'SalesNominalController@sale_nomial_save',
+'as' => 'sale-nomial-save',
+'middleware' => 'can:admin'
+]);
+
+
+
+Route::post('expense-nomial-save',[
+'uses' => 'ExpensesController@expense_nomial_save',
+'as' => 'expense-nomial-save',
+'middleware' => 'can:admin'
+]);
+
+
+
+Route::get('admin-expense-nominal-edit/{id}',[
+'uses' => 'ExpensesController@admin_expense_nominal_edit',
+'as' => 'admin-expense-nominal-edit',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+Route::post('expense-nomial-update',[
+'uses' => 'ExpensesController@expense_nomial_update',
+'as' => 'expense-nomial-update',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+Route::get('export',[
+'uses' => 'ExpensesController@export',
+'as' => 'export',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

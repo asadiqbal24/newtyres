@@ -20,6 +20,9 @@ padding-right:5px !important;
         </div>
       </div>
     </div>
+    <form method="post" action="{{route('sale-nomial-save')}}">
+      {{csrf_field()}}
+
     
     <div class="card">
       <div class="card-body">
@@ -28,6 +31,7 @@ padding-right:5px !important;
           <div class="col-sm-12 col-md-12 col-lg-12">
             <!-- Nav tabs -->
             <button class="btn btn-danger">Close</button>
+            <button type="submit" class="btn btn-primary">Save</button>
             
           </div>
         </div>
@@ -54,7 +58,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="labour_standard" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->labour_standard:''}}" name="labour_standard" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -63,7 +67,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="labour_account" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->labour_account:''}}" name="labour_account" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -76,7 +80,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="labour_sublet_standard" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->labour_sublet_standard:''}}" name="labour_sublet_standard" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -85,7 +89,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="labour_sublet_account" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->labour_sublet_account:''}}" name="labour_sublet_account" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -98,7 +102,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="parts_standard" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->parts_standard:''}}" name="parts_standard" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -107,7 +111,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="parts_account" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->parts_account:''}}" name="parts_account" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -121,7 +125,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="mot_standard" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->mot_standard:''}}" name="mot_standard" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -130,7 +134,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="mot_account" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->mot_account:''}}" name="mot_account" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -144,7 +148,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="mot_sublet_standard" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->mot_sublet_standard:''}}" name="mot_sublet_standard" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -153,7 +157,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="mot_sublet_account" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->mot_sublet_account:''}}" name="mot_sublet_account" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -167,7 +171,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="sundries_standard" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->sundries_standard:''}}" name="sundries_standard" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -176,7 +180,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="sundries_account" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->sundries_account:''}}" name="sundries_account" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -189,7 +193,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="lubricants_standard" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->lubricants_standard:''}}" name="lubricants_standard" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -198,7 +202,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="lubricants_account" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->lubricants_account:''}}" name="lubricants_account" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -211,7 +215,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="paint_standard" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->paint_standard:''}}" name="paint_standard" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -220,7 +224,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="paint_account" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->paint_account:''}}" name="paint_account" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -234,7 +238,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="excess_standard" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->excess_standard:''}}" name="excess_standard" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -243,7 +247,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="excess_account" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->excess_account:''}}" name="excess_account" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -257,7 +261,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="vehicle_exchange_standard" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->vehicle_exchange_standard:''}}" name="vehicle_exchange_standard" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -266,7 +270,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="vehicle_exchange_account" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->vehicle_exchange_account:''}}" name="vehicle_exchange_account" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -280,7 +284,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="vehicle_purchase_standard" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->vehicle_purchase_standard:''}}" name="vehicle_purchase_standard" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -289,7 +293,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="vehicle_purchase_account" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->vehicle_purchase_account:''}}" name="vehicle_purchase_account" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -302,7 +306,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="vehicle_sale_standard" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->vehicle_sale_standard:''}}" name="vehicle_sale_standard" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -311,7 +315,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="vehicle_sale_account" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->vehicle_sale_account:''}}" name="vehicle_sale_account" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -324,7 +328,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="surcharge_standard" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->surcharge_standard:''}}" name="surcharge_standard" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -333,7 +337,7 @@ padding-right:5px !important;
                     
                     <div class="col-md-12 input-group">
                       <div class="form-line">
-                        <input type="text" name="surcharge_account" class="form-control">
+                        <input type="text" value="{{isset($sale)?$sale->surcharge_account:''}}" name="surcharge_account" class="form-control">
                       </div>
                       <span class="input-group-addon"> <i></i> </span>
                     </div>
@@ -356,6 +360,8 @@ padding-right:5px !important;
       </div>
       
     </div>
+
+    </form>
   </div>
   
   

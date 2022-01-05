@@ -10,6 +10,9 @@ use Alert;
 use Auth;
 use App\Models\Banks;
 use App\Models\Suppliers;
+use App\Models\ExpenseNomial;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\UsersExport;
 
 class ExpensesController extends Controller
 {
@@ -82,7 +85,8 @@ public function admin_expense_manager(){
    public function expense_nominals()
    {
         $page_title = 'Expense Nominal';
-        return view('admin.expense.nominal',compact('page_title'));
+        $expense=ExpenseNomial::paginate(10);
+        return view('admin.expense.nominal',compact('page_title','expense'));
    }
 
     public function new_expense_invoice()
@@ -92,5 +96,41 @@ public function admin_expense_manager(){
         return view('admin.expense.invoice',compact('page_title','suppliers'));
 
     }
+   public function expense_nomial_save(Request $request)
+   {
+      // dd($request);
+       $new=new ExpenseNomial();
+       $new->category=$request->main_category;
+       $new->description=$request->description;
+       $new->code=$request->code;
+       $new->active=$request->active;
+       $new->save();
+       alert()->success("Data Inserted SuccessFully");
+       return redirect()->back();
+   }
 
+   public function admin_expense_nominal_edit($id)
+   {
+     $page_title = 'Expense Nominal Edit';
+     $edit=ExpenseNomial::where('id',$id)->first();
+     return view('admin.expense.admin_expense_nominal_edit',compact('page_title','edit'));
+   }
+
+   public function expense_nomial_update(Request $request)
+   {
+    $update=ExpenseNomial::where('id',$request->id)->first();    
+    if (!empty($update)) {  
+    $update->category=$request->main_category;
+    $update->description=$request->description;
+    $update->code=$request->code;
+    $update->active=$request->active;
+    $update->save();
+    }
+    alert()->success("Data Updated SuccessFully");
+    return redirect()->route('admin.expense.nominals');
+   }
+    public function export() 
+    {
+        return Excel::download(new UsersExport, 'customer.xlsx');
+    }
 }

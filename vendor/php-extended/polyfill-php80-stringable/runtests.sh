@@ -95,7 +95,6 @@ fi
 
 # }}} END RUN COMPOSER
 
-
 # {{{ BEGIN RUN PHP-CS-FIXER
 
 printf "\n"
@@ -134,6 +133,21 @@ fi
 
 # }}} END BAN OF MIXED
 
+# {{{ BEGIN BAN OF SELF AS RETURN TYPE
+# Should be replaced with return type static when php min version is php 8.0
+# https://wiki.php.net/rfc/static_return_type
+printf "\n"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] CHECK FOR ': SELF' VALUES IN SOURCE CODE"
+set +e
+grep -r ': self' ./src --include="*.php"
+RES=$?
+set -e
+if [ $RES == 0 ]
+then
+	echo "[$(date '+%Y-%m-%d %H:%M:%S')] There are still ': self' return types values in the code, change it to the interface name."
+	exit 2
+fi
+# }}} END BAN OF self
 
 # {{{ BEGIN RUN PHPSTAN
 

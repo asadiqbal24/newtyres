@@ -28,9 +28,9 @@ padding-right:5px !important;
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <!-- Nav tabs -->
                         <button class="btn btn-danger">Close</button>
-                        <button class="btn btn-success">Sales Nominals</button>
-                        <button class="btn btn-success">Expense Nominals</button>
-                        <button class="btn btn-success">Payment Nominals</button>
+                        <a href="{{route('admin.sales.nominals')}}" class="btn btn-success">Sales Nominals</a>
+                        <a href="{{route('admin.expense.nominals')}}" class="btn btn-success">Expense Nominals</a>
+                        <a href="{{route('admin-payment-methods')}}" class="btn btn-success">Payment Nominals</a>
                         
                     </div>
                 </div>
@@ -40,10 +40,10 @@ padding-right:5px !important;
         <div class="card">
             <div class="card-body">
                 <div class="row clearfix">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="col-sm-12 col-md-4 col-lg-5">
                         <div class="row">
                             <div class="col-sm-12 col-md-6 col-lg-6">
-                                <a href="{{route('export-sales')}}" class="btn btn-info btn-block">
+                                <a href="{{route('export')}}" class="btn btn-info btn-block">
                                 Export Sales<br><small>to current date</small>
                                 </a>
                             </div>
@@ -91,8 +91,7 @@ padding-right:5px !important;
                             
 
                             <hr style="width: 100%">
-                        </div>
-                        <div class="row">
+                            <div class="row">
                             
                             <div class="col-sm-12 col-md-12 col-lg-12">
                                 <label>Format</label>
@@ -105,10 +104,10 @@ padding-right:5px !important;
                             
                             <hr style="width: 100%">
                         </div>
-                    </div>
+                        </div>
 
 
-                    <div class="col-md-8 col-lg-8 col-sm-12">
+ <div class="col-md-8 col-lg-7 col-sm-12">
 
 
             <div class="row">
@@ -141,6 +140,12 @@ padding-right:5px !important;
           
 
                     </div>
+
+                        
+                    </div>
+
+
+                    
                     
                 </div>
             </div>

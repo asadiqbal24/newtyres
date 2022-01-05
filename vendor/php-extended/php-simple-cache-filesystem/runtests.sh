@@ -146,7 +146,6 @@ echo $CURRCOMP | jq --tab '{
 
 # }}} END FORMAT composer.json
 
-
 # {{{ BEGIN RUN COMPOSER
 
 printf "\n"
@@ -171,7 +170,6 @@ else
 fi
 
 # }}} END RUN COMPOSER
-
 
 # {{{ BEGIN RUN PHP-CS-FIXER
 
@@ -210,6 +208,20 @@ then
 fi
 
 # }}} END BAN OF MIXED
+
+# {{{ BEGIN BAN OF SELF AS RETURN TYPE
+printf "\n"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] CHECK FOR ': SELF' VALUES IN SOURCE CODE"
+set +e
+grep -r ': self' ./src --include="*.php"
+RES=$?
+set -e
+if [ $RES == 0 ]
+then
+	echo "[$(date '+%Y-%m-%d %H:%M:%S')] There are still ': self' return types values in the code, change it to the interface name."
+	exit 2
+fi
+# }}} END BAN OF self
 
 
 # {{{ BEGIN RUN PHPSTAN
