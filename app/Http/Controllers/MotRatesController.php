@@ -16,6 +16,7 @@ class MotRatesController extends Controller
 
     public function admin_mote_rate_save(Request $request)
     {
+        //dd($request);
         $new=new MotRates();
         $new->type=$request->type;
         $new->description=$request->description;

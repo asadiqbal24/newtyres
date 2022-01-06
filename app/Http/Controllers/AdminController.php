@@ -282,6 +282,7 @@ class AdminController extends Controller
 
   public function save_user_preferences(Request $r){
 
+
         $validator = Validator::make($r->all(), [
             'home_screen' => 'required',
             'interface_scaling'=>'required',
@@ -317,6 +318,8 @@ class AdminController extends Controller
 
 
   public function save_authentication(Request $r){
+
+        //dd($r);
 
         $user = User::where('email',Auth::user()->email)->first();
         $user->email = $r->email;        

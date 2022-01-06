@@ -418,4 +418,38 @@ class CustomerDetailController extends Controller
         return redirect()->back();
     }
 
+
+    public function admin_atdelivery_edit($id)
+    {
+         $page_title = 'At Delivery Edit';
+        $edit=AtDelivery::where('id',$id)->first();
+        if (!empty($edit)) {
+           return view('admin.customer.admin_atdelivery_edit',compact('edit','page_title'));
+        }
+    }
+
+    public function admin_atdelivery_updated(Request $request)
+    {
+     
+       $update=AtDelivery::where('id',$request->id)->first();
+       if (!empty($update)) {
+        $update->title=$request->title;
+        $update->name=$request->name;
+        $update->surname=$request->surname;
+        $update->house_no=$request->house_no;
+        $update->post_code=$request->postcode;
+        $update->road=$request->road;
+        $update->town=$request->town;
+        $update->country=$request->county;
+        $update->telephone=$request->telephone;
+        $update->mobile=$request->mobile;
+        $update->locality=$request->locality;
+        $update->save();
+          
+       }
+       alert()->success("Data Updated SuccessFully");
+       return redirect()->route('admin.add.new.customer');
+
+    }
+
 }

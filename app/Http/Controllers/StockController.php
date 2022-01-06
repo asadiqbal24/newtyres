@@ -145,7 +145,7 @@ class StockController extends Controller
 
     public function admin_stock_setting_save(Request $request)
     {
-
+    
 
 
 
@@ -336,20 +336,13 @@ public function admin_miscellaneous_setting(Request $request)
         $new->automaticlly_formt=$request->automaticlly_formt;
         $new->default_vehical=$request->default_vehical;
         $new->highlight_last=$request->highlight_last;
-
         $new->repeat_last=$request->repeat_last;
         $new->keep_orignal=$request->keep_orignal;
         $new->time_until=$request->time_until;
         $new->display_doc=$request->display_doc;
         $new->output_printed=$request->output_printed;
-
-
         $new->print_account=$request->print_account;
         $new->statement_footer=$request->statement_footer;
-
-
-
-
         $new->prefix_customer=$request->prefix_customer;
         $new->suggest_matching=$request->suggest_matching;
         $new->reminders=$request->reminders;
@@ -358,8 +351,9 @@ public function admin_miscellaneous_setting(Request $request)
         $new->sms=$request->sms;
         $new->save();
 
-       
-   }else{
+       }
+
+       else{
         $new->day=$request->day;
         $new->month=$request->month;
         $new->character_case=$request->character_case;
@@ -527,7 +521,7 @@ public function admin_calender_grid_system_save(Request $request)
 
 public function admin_stock_delete($id)
 {
-  $delete=Stock::where('id',$id)->delete();
+   $delete=Stock::where('id',$id)->delete();
     alert()->success("Data Deleted Successfully");
     return redirect()->back();   
 }

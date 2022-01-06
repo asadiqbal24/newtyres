@@ -19,6 +19,7 @@ public function tax_rates()
 
     public function admin_tax_rates_save(Request $request)
     {
+        //dd($request);
         
         $new= new TaxRates();
         $new->tax_code=$request->tax_code;
@@ -111,6 +112,7 @@ public function admin_taxes_rate_edit($id)
 
 public function admin_tax_rate_update(Request $request)
 {
+    //dd($request);
     $update=TaxRates::where('id',$request->id)->first();
     if (!empty($update)) {
          $update->tax_code=$request->tax_code;

@@ -311,6 +311,7 @@ public function termandcontion()
 
 public function termandcontion_create(Request $r)
 {
+    //dd($r);
     $new = new TermandConditionModel();
     $new->name = $r->name;
     $new->active = $r->active;

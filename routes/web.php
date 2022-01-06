@@ -2163,7 +2163,7 @@ Route::get('doc.template.termandcontion',[
    'middleware' => 'can:admin'
 ]);
 
-Route::get('doc.template.termandcontion_create',[
+Route::post('doc.template.termandcontion_create',[
    'uses' => 'DocTemplateSettingsController@termandcontion_create',
    'as' => 'admin.doc.template.termandcontion_create',
    'middleware' => 'can:admin'
@@ -3400,6 +3400,29 @@ Route::get('export',[
 'as' => 'export',
 'middleware' => 'can:admin'
 ]);
+
+
+
+
+Route::get('admin-atdelivery-edit/{id}',[
+'uses' => 'CustomerDetailController@admin_atdelivery_edit',
+'as' => 'admin-atdelivery-edit',
+'middleware' => 'can:admin'
+]);
+
+
+
+Route::post('admin-atdelivery-updated',[
+'uses' => 'CustomerDetailController@admin_atdelivery_updated',
+'as' => 'admin-atdelivery-updated',
+'middleware' => 'can:admin'
+]);
+
+
+
+
+
+
 
 
 
